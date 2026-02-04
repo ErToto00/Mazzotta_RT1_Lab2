@@ -1,0 +1,4 @@
+source;share/rt1_assignment2/local_setup.bash
+source;share/rt1_assignment2/local_setup.dsv
+source;share/rt1_assignment2/local_setup.sh
+source;share/rt1_assignment2/local_setup.zsh

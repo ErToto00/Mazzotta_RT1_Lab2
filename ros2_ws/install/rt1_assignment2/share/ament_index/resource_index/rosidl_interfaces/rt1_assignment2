@@ -1,0 +1,6 @@
+msg/Info.idl
+msg/Info.msg
+srv/GetAvgVel.idl
+srv/GetAvgVel.srv
+srv/SetThreshold.idl
+srv/SetThreshold.srv

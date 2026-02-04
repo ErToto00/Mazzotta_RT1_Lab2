@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "rt1_assignment2__py",
+		"source" : "/home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/build/rt1_assignment2/rt1_assignment2__py"
+	}
+}

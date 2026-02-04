@@ -1,0 +1,17 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from rt1_assignment2/srv/GetAvgVel.srv
+// generated code does not contain a copyright notice
+
+
+module rt1_assignment2 {
+  module srv {
+    struct GetAvgVel_Request {
+      uint8 structure_needs_at_least_one_member;
+    };
+    struct GetAvgVel_Response {
+      float avg_linear;
+
+      float avg_angular;
+    };
+  };
+};

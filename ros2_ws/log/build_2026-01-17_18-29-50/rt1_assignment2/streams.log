@@ -1,0 +1,352 @@
+[0.005s] Invoking command in '/home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/build/rt1_assignment2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/src/rt1_assignment2 -DCMAKE_INSTALL_PREFIX=/home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2
+[0.122s] -- The C compiler identification is GNU 13.3.0
+[0.259s] -- The CXX compiler identification is GNU 13.3.0
+[0.272s] -- Detecting C compiler ABI info
+[0.450s] -- Detecting C compiler ABI info - done
+[0.476s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.477s] -- Detecting C compile features
+[0.478s] -- Detecting C compile features - done
+[0.507s] -- Detecting CXX compiler ABI info
+[0.805s] -- Detecting CXX compiler ABI info - done
+[0.841s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.842s] -- Detecting CXX compile features
+[0.843s] -- Detecting CXX compile features - done
+[0.853s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[1.306s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.548s] -- Found rclcpp: 28.1.13 (/opt/ros/jazzy/share/rclcpp/cmake)
+[1.692s] -- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[1.736s] -- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[1.762s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.778s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.820s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[1.821s] -- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[1.966s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[2.028s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[2.099s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.203s] -- Found std_msgs: 5.3.6 (/opt/ros/jazzy/share/std_msgs/cmake)
+[2.211s] -- Found geometry_msgs: 5.3.6 (/opt/ros/jazzy/share/geometry_msgs/cmake)
+[2.219s] -- Found sensor_msgs: 5.3.6 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+[2.232s] -- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[2.240s] -- Found rosidl_adapter: 4.6.6 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[3.864s] -- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)
+[6.207s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[7.248s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[7.258s] -- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)
+[7.684s] -- Found PythonExtra: /usr/bin/python3  
+[8.779s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed 
+[8.852s] -- Found ament_lint_auto: 0.17.3 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[8.888s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[8.888s] -- Configured cppcheck include dirs: 
+[8.888s] -- Configured cppcheck exclude dirs and/or files: 
+[8.889s] -- Added test 'flake8' to check Python code syntax and style conventions
+[8.889s] -- Configured 'flake8' exclude dirs and/or files: 
+[8.890s] -- Added test 'lint_cmake' to check CMake code style
+[8.891s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[8.892s] -- Added test 'uncrustify' to check C / C++ code style
+[8.892s] -- Configured uncrustify additional arguments: 
+[8.893s] -- Added test 'xmllint' to check XML markup files
+[8.897s] [0mCMake Deprecation Warning at /opt/ros/jazzy/share/rosidl_cmake/cmake/rosidl_target_interfaces.cmake:32 (message):
+[8.898s]   Use rosidl_get_typesupport_target() and target_link_libraries() instead of
+[8.898s]   rosidl_target_interfaces().  i.e:
+[8.898s] 
+[8.898s]     rosidl_get_typesupport_target(cpp_typesupport_target "${PROJECT_NAME}" "rosidl_typesupport_cpp")
+[8.898s]     target_link_libraries(${PROJECT_NAME}_node "${cpp_typesupport_target}")
+[8.898s] 
+[8.898s] Call Stack (most recent call first):
+[8.898s]   CMakeLists.txt:34 (rosidl_target_interfaces)
+[8.898s] 
+[8.899s] [0m
+[8.899s] -- Configuring done (8.9s)
+[8.927s] -- Generating done (0.0s)
+[8.934s] -- Build files have been written to: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/build/rt1_assignment2
+[8.942s] Invoked command in '/home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/build/rt1_assignment2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/src/rt1_assignment2 -DCMAKE_INSTALL_PREFIX=/home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2
+[8.943s] Invoking command in '/home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/build/rt1_assignment2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/build/rt1_assignment2 -- -j32 -l32
+[9.078s] [  1%] [34m[1mGenerating type hashes for ROS interfaces[0m
+[9.104s] [  1%] Built target ament_cmake_python_copy_rt1_assignment2
+[9.293s] [  1%] Built target rt1_assignment2__rosidl_generator_type_description
+[9.295s] running egg_info
+[9.295s] creating rt1_assignment2.egg-info
+[9.304s] [  3%] [34m[1mGenerating C code for ROS interfaces[0m
+[9.305s] writing rt1_assignment2.egg-info/PKG-INFO
+[9.305s] writing dependency_links to rt1_assignment2.egg-info/dependency_links.txt
+[9.305s] writing top-level names to rt1_assignment2.egg-info/top_level.txt
+[9.305s] writing manifest file 'rt1_assignment2.egg-info/SOURCES.txt'
+[9.311s] [  5%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[9.329s] reading manifest file 'rt1_assignment2.egg-info/SOURCES.txt'
+[9.329s] writing manifest file 'rt1_assignment2.egg-info/SOURCES.txt'
+[9.347s] [  5%] Built target ament_cmake_python_build_rt1_assignment2_egg
+[9.513s] [  5%] Built target rt1_assignment2__cpp
+[9.542s] [  8%] [32mBuilding C object CMakeFiles/rt1_assignment2__rosidl_generator_c.dir/rosidl_generator_c/rt1_assignment2/srv/detail/get_avg_vel__functions.c.o[0m
+[9.542s] [ 10%] [32mBuilding C object CMakeFiles/rt1_assignment2__rosidl_generator_c.dir/rosidl_generator_c/rt1_assignment2/srv/detail/get_avg_vel__type_support.c.o[0m
+[9.542s] [ 10%] [32mBuilding C object CMakeFiles/rt1_assignment2__rosidl_generator_c.dir/rosidl_generator_c/rt1_assignment2/msg/detail/info__functions.c.o[0m
+[9.545s] [ 12%] [32mBuilding C object CMakeFiles/rt1_assignment2__rosidl_generator_c.dir/rosidl_generator_c/rt1_assignment2/msg/detail/info__description.c.o[0m
+[9.546s] [ 14%] [32mBuilding C object CMakeFiles/rt1_assignment2__rosidl_generator_c.dir/rosidl_generator_c/rt1_assignment2/msg/detail/info__type_support.c.o[0m
+[9.546s] [ 16%] [32mBuilding C object CMakeFiles/rt1_assignment2__rosidl_generator_c.dir/rosidl_generator_c/rt1_assignment2/srv/detail/set_threshold__description.c.o[0m
+[9.546s] [ 19%] [32mBuilding C object CMakeFiles/rt1_assignment2__rosidl_generator_c.dir/rosidl_generator_c/rt1_assignment2/srv/detail/set_threshold__type_support.c.o[0m
+[9.546s] [ 19%] [32mBuilding C object CMakeFiles/rt1_assignment2__rosidl_generator_c.dir/rosidl_generator_c/rt1_assignment2/srv/detail/set_threshold__functions.c.o[0m
+[9.546s] [ 21%] [32mBuilding C object CMakeFiles/rt1_assignment2__rosidl_generator_c.dir/rosidl_generator_c/rt1_assignment2/srv/detail/get_avg_vel__description.c.o[0m
+[9.684s] [ 23%] [32m[1mLinking C shared library librt1_assignment2__rosidl_generator_c.so[0m
+[9.800s] [ 23%] Built target rt1_assignment2__rosidl_generator_c
+[9.830s] [ 25%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[9.831s] [ 28%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[9.832s] [ 28%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[9.832s] [ 30%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[9.834s] [ 32%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[9.835s] [ 33%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[10.080s] [ 39%] [32mBuilding CXX object CMakeFiles/rt1_assignment2__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rt1_assignment2/msg/info__type_support.cpp.o[0m
+[10.080s] [ 39%] [32mBuilding CXX object CMakeFiles/rt1_assignment2__rosidl_typesupport_c.dir/rosidl_typesupport_c/rt1_assignment2/msg/info__type_support.cpp.o[0m
+[10.081s] [ 39%] [32mBuilding CXX object CMakeFiles/rt1_assignment2__rosidl_typesupport_c.dir/rosidl_typesupport_c/rt1_assignment2/srv/get_avg_vel__type_support.cpp.o[0m
+[10.081s] [ 41%] [32mBuilding CXX object CMakeFiles/rt1_assignment2__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rt1_assignment2/srv/set_threshold__type_support.cpp.o[0m
+[10.082s] [ 44%] [32mBuilding CXX object CMakeFiles/rt1_assignment2__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rt1_assignment2/srv/get_avg_vel__type_support.cpp.o[0m
+[10.082s] [ 44%] [32mBuilding CXX object CMakeFiles/rt1_assignment2__rosidl_typesupport_c.dir/rosidl_typesupport_c/rt1_assignment2/srv/set_threshold__type_support.cpp.o[0m
+[10.101s] [ 46%] [32mBuilding CXX object CMakeFiles/rt1_assignment2__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/rt1_assignment2/srv/detail/get_avg_vel__type_support.cpp.o[0m
+[10.103s] [ 50%] [32mBuilding CXX object CMakeFiles/rt1_assignment2__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/rt1_assignment2/msg/detail/info__type_support.cpp.o[0m
+[10.103s] [ 50%] [32mBuilding CXX object CMakeFiles/rt1_assignment2__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/rt1_assignment2/srv/detail/set_threshold__type_support.cpp.o[0m
+[10.121s] [ 51%] [32m[1mLinking CXX shared library librt1_assignment2__rosidl_typesupport_c.so[0m
+[10.126s] [ 55%] [32mBuilding C object CMakeFiles/rt1_assignment2__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/rt1_assignment2/srv/detail/set_threshold__type_support.c.o[0m
+[10.126s] [ 55%] [32mBuilding C object CMakeFiles/rt1_assignment2__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/rt1_assignment2/msg/detail/info__type_support.c.o[0m
+[10.127s] [ 57%] [32mBuilding C object CMakeFiles/rt1_assignment2__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/rt1_assignment2/srv/detail/get_avg_vel__type_support.c.o[0m
+[10.140s] [ 58%] [32mBuilding CXX object CMakeFiles/rt1_assignment2__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/rt1_assignment2/srv/detail/dds_fastrtps/get_avg_vel__type_support.cpp.o[0m
+[10.141s] [ 62%] [32mBuilding CXX object CMakeFiles/rt1_assignment2__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/rt1_assignment2/srv/detail/dds_fastrtps/set_threshold__type_support.cpp.o[0m
+[10.141s] [ 62%] [32mBuilding CXX object CMakeFiles/rt1_assignment2__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/rt1_assignment2/msg/detail/dds_fastrtps/info__type_support.cpp.o[0m
+[10.147s] [ 62%] Built target rt1_assignment2__rosidl_typesupport_c
+[10.151s] [ 66%] [32mBuilding CXX object CMakeFiles/rt1_assignment2__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/rt1_assignment2/srv/detail/set_threshold__type_support_c.cpp.o[0m
+[10.151s] [ 66%] [32mBuilding CXX object CMakeFiles/rt1_assignment2__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/rt1_assignment2/msg/detail/info__type_support_c.cpp.o[0m
+[10.153s] [ 67%] [32mBuilding CXX object CMakeFiles/rt1_assignment2__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/rt1_assignment2/srv/detail/get_avg_vel__type_support_c.cpp.o[0m
+[10.170s] [ 69%] [32m[1mLinking C shared library librt1_assignment2__rosidl_typesupport_introspection_c.so[0m
+[10.201s] [ 69%] Built target rt1_assignment2__rosidl_typesupport_introspection_c
+[10.318s] [ 71%] [32m[1mLinking CXX shared library librt1_assignment2__rosidl_typesupport_introspection_cpp.so[0m
+[10.364s] [ 71%] Built target rt1_assignment2__rosidl_typesupport_introspection_cpp
+[10.383s] [ 73%] [32m[1mLinking CXX shared library librt1_assignment2__rosidl_typesupport_cpp.so[0m
+[10.427s] [ 75%] [32m[1mLinking CXX shared library librt1_assignment2__rosidl_typesupport_fastrtps_c.so[0m
+[10.429s] [ 75%] Built target rt1_assignment2__rosidl_typesupport_cpp
+[10.474s] [ 75%] Built target rt1_assignment2__rosidl_typesupport_fastrtps_c
+[10.488s] [ 76%] [32m[1mLinking CXX shared library librt1_assignment2__rosidl_typesupport_fastrtps_cpp.so[0m
+[10.669s] [ 76%] Built target rt1_assignment2__rosidl_typesupport_fastrtps_cpp
+[10.732s] [ 76%] Built target rt1_assignment2
+[10.794s] [ 78%] [32mBuilding CXX object CMakeFiles/safety_controller.dir/src/safety_controller.cpp.o[0m
+[10.796s] [ 80%] [34m[1mGenerating Python code for ROS interfaces[0m
+[11.187s] [ 80%] Built target rt1_assignment2__py
+[11.204s] [ 83%] [32mBuilding C object CMakeFiles/rt1_assignment2__rosidl_generator_py.dir/rosidl_generator_py/rt1_assignment2/srv/_get_avg_vel_s.c.o[0m
+[11.204s] [ 85%] [32mBuilding C object CMakeFiles/rt1_assignment2__rosidl_generator_py.dir/rosidl_generator_py/rt1_assignment2/msg/_info_s.c.o[0m
+[11.204s] [ 85%] [32mBuilding C object CMakeFiles/rt1_assignment2__rosidl_generator_py.dir/rosidl_generator_py/rt1_assignment2/srv/_set_threshold_s.c.o[0m
+[11.280s] [ 87%] [32m[1mLinking C shared library librt1_assignment2__rosidl_generator_py.so[0m
+[11.311s] [ 87%] Built target rt1_assignment2__rosidl_generator_py
+[11.326s] [ 89%] [32mBuilding C object CMakeFiles/rt1_assignment2_s__rosidl_typesupport_c.dir/rosidl_generator_py/rt1_assignment2/_rt1_assignment2_s.ep.rosidl_typesupport_c.c.o[0m
+[11.327s] [ 91%] [32mBuilding C object CMakeFiles/rt1_assignment2_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/rt1_assignment2/_rt1_assignment2_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[11.327s] [ 92%] [32mBuilding C object CMakeFiles/rt1_assignment2_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/rt1_assignment2/_rt1_assignment2_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[11.390s] [ 94%] [32m[1mLinking C shared module rosidl_generator_py/rt1_assignment2/rt1_assignment2_s__rosidl_typesupport_c.so[0m
+[11.390s] [ 96%] [32m[1mLinking C shared module rosidl_generator_py/rt1_assignment2/rt1_assignment2_s__rosidl_typesupport_introspection_c.so[0m
+[11.395s] [ 98%] [32m[1mLinking C shared module rosidl_generator_py/rt1_assignment2/rt1_assignment2_s__rosidl_typesupport_fastrtps_c.so[0m
+[11.410s] [ 98%] Built target rt1_assignment2_s__rosidl_typesupport_c
+[11.412s] [ 98%] Built target rt1_assignment2_s__rosidl_typesupport_introspection_c
+[11.417s] [ 98%] Built target rt1_assignment2_s__rosidl_typesupport_fastrtps_c
+[16.420s] [100%] [32m[1mLinking CXX executable safety_controller[0m
+[16.699s] [100%] Built target safety_controller
+[16.710s] Invoked command in '/home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/build/rt1_assignment2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/build/rt1_assignment2 -- -j32 -l32
+[16.717s] Invoking command in '/home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/build/rt1_assignment2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/build/rt1_assignment2
+[16.724s] -- Install configuration: ""
+[16.724s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/share/ament_index/resource_index/rosidl_interfaces/rt1_assignment2
+[16.725s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/share/rt1_assignment2/msg/Info.json
+[16.725s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/share/rt1_assignment2/srv/SetThreshold.json
+[16.725s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/share/rt1_assignment2/srv/GetAvgVel.json
+[16.725s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2
+[16.725s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/srv
+[16.725s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/srv/detail
+[16.725s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/srv/detail/set_threshold__struct.h
+[16.725s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/srv/detail/set_threshold__description.c
+[16.725s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/srv/detail/get_avg_vel__functions.h
+[16.725s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/srv/detail/set_threshold__functions.c
+[16.725s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/srv/detail/get_avg_vel__type_support.h
+[16.725s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/srv/detail/get_avg_vel__description.c
+[16.725s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/srv/detail/set_threshold__functions.h
+[16.725s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/srv/detail/set_threshold__type_support.c
+[16.725s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/srv/detail/get_avg_vel__struct.h
+[16.725s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/srv/detail/get_avg_vel__functions.c
+[16.725s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/srv/detail/get_avg_vel__type_support.c
+[16.725s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/srv/detail/set_threshold__type_support.h
+[16.725s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/srv/set_threshold.h
+[16.725s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/srv/get_avg_vel.h
+[16.725s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/msg
+[16.725s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/msg/rosidl_generator_c__visibility_control.h
+[16.725s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/msg/detail
+[16.726s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/msg/detail/info__type_support.c
+[16.726s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/msg/detail/info__functions.h
+[16.726s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/msg/detail/info__type_support.h
+[16.726s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/msg/detail/info__struct.h
+[16.726s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/msg/detail/info__description.c
+[16.726s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/msg/detail/info__functions.c
+[16.726s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/msg/info.h
+[16.726s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/share/rt1_assignment2/environment/library_path.sh
+[16.726s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/share/rt1_assignment2/environment/library_path.dsv
+[16.726s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/lib/librt1_assignment2__rosidl_generator_c.so
+[16.726s] -- Set non-toolchain portion of runtime path of "/home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/lib/librt1_assignment2__rosidl_generator_c.so" to ""
+[16.726s] -- Up-to-date: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2
+[16.726s] -- Up-to-date: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/srv
+[16.726s] -- Up-to-date: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/srv/detail
+[16.726s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/srv/detail/get_avg_vel__rosidl_typesupport_fastrtps_c.h
+[16.726s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/srv/detail/set_threshold__rosidl_typesupport_fastrtps_c.h
+[16.726s] -- Up-to-date: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/msg
+[16.726s] -- Up-to-date: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/msg/detail
+[16.726s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/msg/detail/info__rosidl_typesupport_fastrtps_c.h
+[16.726s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[16.726s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/lib/librt1_assignment2__rosidl_typesupport_fastrtps_c.so
+[16.726s] -- Set non-toolchain portion of runtime path of "/home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/lib/librt1_assignment2__rosidl_typesupport_fastrtps_c.so" to ""
+[16.726s] -- Up-to-date: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2
+[16.726s] -- Up-to-date: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/srv
+[16.726s] -- Up-to-date: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/srv/detail
+[16.726s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/srv/detail/set_threshold__builder.hpp
+[16.727s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/srv/detail/get_avg_vel__builder.hpp
+[16.727s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/srv/detail/set_threshold__type_support.hpp
+[16.727s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/srv/detail/set_threshold__struct.hpp
+[16.727s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/srv/detail/get_avg_vel__type_support.hpp
+[16.727s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/srv/detail/get_avg_vel__struct.hpp
+[16.727s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/srv/detail/set_threshold__traits.hpp
+[16.727s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/srv/detail/get_avg_vel__traits.hpp
+[16.727s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/srv/get_avg_vel.hpp
+[16.727s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/srv/set_threshold.hpp
+[16.727s] -- Up-to-date: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/msg
+[16.727s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/msg/rosidl_generator_cpp__visibility_control.hpp
+[16.727s] -- Up-to-date: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/msg/detail
+[16.727s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/msg/detail/info__type_support.hpp
+[16.727s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/msg/detail/info__struct.hpp
+[16.727s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/msg/detail/info__traits.hpp
+[16.727s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/msg/detail/info__builder.hpp
+[16.727s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/msg/info.hpp
+[16.727s] -- Up-to-date: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2
+[16.727s] -- Up-to-date: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/srv
+[16.727s] -- Up-to-date: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/srv/detail
+[16.727s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/srv/detail/get_avg_vel__rosidl_typesupport_fastrtps_cpp.hpp
+[16.727s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/srv/detail/dds_fastrtps
+[16.727s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/srv/detail/set_threshold__rosidl_typesupport_fastrtps_cpp.hpp
+[16.728s] -- Up-to-date: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/msg
+[16.728s] -- Up-to-date: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/msg/detail
+[16.728s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/msg/detail/info__rosidl_typesupport_fastrtps_cpp.hpp
+[16.728s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/msg/detail/dds_fastrtps
+[16.728s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[16.728s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/lib/librt1_assignment2__rosidl_typesupport_fastrtps_cpp.so
+[16.728s] -- Set non-toolchain portion of runtime path of "/home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/lib/librt1_assignment2__rosidl_typesupport_fastrtps_cpp.so" to ""
+[16.728s] -- Up-to-date: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2
+[16.728s] -- Up-to-date: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/srv
+[16.728s] -- Up-to-date: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/srv/detail
+[16.728s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/srv/detail/get_avg_vel__rosidl_typesupport_introspection_c.h
+[16.728s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/srv/detail/set_threshold__rosidl_typesupport_introspection_c.h
+[16.728s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/srv/detail/set_threshold__type_support.c
+[16.728s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/srv/detail/get_avg_vel__type_support.c
+[16.728s] -- Up-to-date: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/msg
+[16.728s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[16.728s] -- Up-to-date: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/msg/detail
+[16.728s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/msg/detail/info__type_support.c
+[16.728s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/msg/detail/info__rosidl_typesupport_introspection_c.h
+[16.728s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/lib/librt1_assignment2__rosidl_typesupport_introspection_c.so
+[16.728s] -- Set non-toolchain portion of runtime path of "/home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/lib/librt1_assignment2__rosidl_typesupport_introspection_c.so" to ""
+[16.728s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/lib/librt1_assignment2__rosidl_typesupport_c.so
+[16.728s] -- Set non-toolchain portion of runtime path of "/home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/lib/librt1_assignment2__rosidl_typesupport_c.so" to ""
+[16.728s] -- Up-to-date: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2
+[16.729s] -- Up-to-date: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/srv
+[16.729s] -- Up-to-date: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/srv/detail
+[16.729s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/srv/detail/set_threshold__rosidl_typesupport_introspection_cpp.hpp
+[16.729s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/srv/detail/set_threshold__type_support.cpp
+[16.729s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/srv/detail/get_avg_vel__type_support.cpp
+[16.729s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/srv/detail/get_avg_vel__rosidl_typesupport_introspection_cpp.hpp
+[16.729s] -- Up-to-date: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/msg
+[16.729s] -- Up-to-date: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/msg/detail
+[16.729s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/msg/detail/info__rosidl_typesupport_introspection_cpp.hpp
+[16.729s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/msg/detail/info__type_support.cpp
+[16.729s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/lib/librt1_assignment2__rosidl_typesupport_introspection_cpp.so
+[16.729s] -- Set non-toolchain portion of runtime path of "/home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/lib/librt1_assignment2__rosidl_typesupport_introspection_cpp.so" to ""
+[16.729s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/lib/librt1_assignment2__rosidl_typesupport_cpp.so
+[16.729s] -- Set non-toolchain portion of runtime path of "/home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/lib/librt1_assignment2__rosidl_typesupport_cpp.so" to ""
+[16.729s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/share/rt1_assignment2/environment/pythonpath.sh
+[16.729s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/share/rt1_assignment2/environment/pythonpath.dsv
+[16.729s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/lib/python3.12/site-packages/rt1_assignment2-0.0.0-py3.12.egg-info
+[16.729s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/lib/python3.12/site-packages/rt1_assignment2-0.0.0-py3.12.egg-info/PKG-INFO
+[16.729s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/lib/python3.12/site-packages/rt1_assignment2-0.0.0-py3.12.egg-info/top_level.txt
+[16.729s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/lib/python3.12/site-packages/rt1_assignment2-0.0.0-py3.12.egg-info/SOURCES.txt
+[16.729s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/lib/python3.12/site-packages/rt1_assignment2-0.0.0-py3.12.egg-info/dependency_links.txt
+[16.729s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/lib/python3.12/site-packages/rt1_assignment2
+[16.730s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/lib/python3.12/site-packages/rt1_assignment2/rt1_assignment2_s__rosidl_typesupport_fastrtps_c.so
+[16.730s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/lib/python3.12/site-packages/rt1_assignment2/_rt1_assignment2_s.ep.rosidl_typesupport_fastrtps_c.c
+[16.730s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/lib/python3.12/site-packages/rt1_assignment2/rt1_assignment2_s__rosidl_typesupport_introspection_c.so
+[16.730s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/lib/python3.12/site-packages/rt1_assignment2/__init__.py
+[16.730s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/lib/python3.12/site-packages/rt1_assignment2/_rt1_assignment2_s.ep.rosidl_typesupport_introspection_c.c
+[16.730s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/lib/python3.12/site-packages/rt1_assignment2/rt1_assignment2_s__rosidl_typesupport_c.so
+[16.730s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/lib/python3.12/site-packages/rt1_assignment2/srv
+[16.730s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/lib/python3.12/site-packages/rt1_assignment2/srv/__init__.py
+[16.730s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/lib/python3.12/site-packages/rt1_assignment2/srv/_get_avg_vel.py
+[16.730s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/lib/python3.12/site-packages/rt1_assignment2/srv/_set_threshold.py
+[16.730s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/lib/python3.12/site-packages/rt1_assignment2/srv/_set_threshold_s.c
+[16.730s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/lib/python3.12/site-packages/rt1_assignment2/srv/_get_avg_vel_s.c
+[16.730s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/lib/python3.12/site-packages/rt1_assignment2/_rt1_assignment2_s.ep.rosidl_typesupport_c.c
+[16.730s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/lib/python3.12/site-packages/rt1_assignment2/msg
+[16.730s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/lib/python3.12/site-packages/rt1_assignment2/msg/__init__.py
+[16.730s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/lib/python3.12/site-packages/rt1_assignment2/msg/_info_s.c
+[16.730s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/lib/python3.12/site-packages/rt1_assignment2/msg/_info.py
+[16.761s] Listing '/home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/lib/python3.12/site-packages/rt1_assignment2'...
+[16.761s] Compiling '/home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/lib/python3.12/site-packages/rt1_assignment2/__init__.py'...
+[16.761s] Listing '/home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/lib/python3.12/site-packages/rt1_assignment2/msg'...
+[16.761s] Compiling '/home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/lib/python3.12/site-packages/rt1_assignment2/msg/__init__.py'...
+[16.761s] Compiling '/home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/lib/python3.12/site-packages/rt1_assignment2/msg/_info.py'...
+[16.761s] Listing '/home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/lib/python3.12/site-packages/rt1_assignment2/srv'...
+[16.761s] Compiling '/home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/lib/python3.12/site-packages/rt1_assignment2/srv/__init__.py'...
+[16.761s] Compiling '/home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/lib/python3.12/site-packages/rt1_assignment2/srv/_get_avg_vel.py'...
+[16.761s] Compiling '/home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/lib/python3.12/site-packages/rt1_assignment2/srv/_set_threshold.py'...
+[16.764s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/lib/python3.12/site-packages/rt1_assignment2/rt1_assignment2_s__rosidl_typesupport_fastrtps_c.so
+[16.764s] -- Set non-toolchain portion of runtime path of "/home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/lib/python3.12/site-packages/rt1_assignment2/rt1_assignment2_s__rosidl_typesupport_fastrtps_c.so" to ""
+[16.764s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/lib/python3.12/site-packages/rt1_assignment2/rt1_assignment2_s__rosidl_typesupport_introspection_c.so
+[16.764s] -- Set non-toolchain portion of runtime path of "/home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/lib/python3.12/site-packages/rt1_assignment2/rt1_assignment2_s__rosidl_typesupport_introspection_c.so" to ""
+[16.764s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/lib/python3.12/site-packages/rt1_assignment2/rt1_assignment2_s__rosidl_typesupport_c.so
+[16.764s] -- Set non-toolchain portion of runtime path of "/home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/lib/python3.12/site-packages/rt1_assignment2/rt1_assignment2_s__rosidl_typesupport_c.so" to ""
+[16.764s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/lib/librt1_assignment2__rosidl_generator_py.so
+[16.765s] -- Set non-toolchain portion of runtime path of "/home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/lib/librt1_assignment2__rosidl_generator_py.so" to ""
+[16.765s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/share/rt1_assignment2/msg/Info.idl
+[16.765s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/share/rt1_assignment2/srv/SetThreshold.idl
+[16.765s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/share/rt1_assignment2/srv/GetAvgVel.idl
+[16.765s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/share/rt1_assignment2/msg/Info.msg
+[16.765s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/share/rt1_assignment2/srv/SetThreshold.srv
+[16.765s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/share/rt1_assignment2/srv/GetAvgVel.srv
+[16.765s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/share/ament_index/resource_index/package_run_dependencies/rt1_assignment2
+[16.765s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/share/ament_index/resource_index/parent_prefix_path/rt1_assignment2
+[16.765s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/share/rt1_assignment2/environment/ament_prefix_path.sh
+[16.765s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/share/rt1_assignment2/environment/ament_prefix_path.dsv
+[16.765s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/share/rt1_assignment2/environment/path.sh
+[16.765s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/share/rt1_assignment2/environment/path.dsv
+[16.766s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/share/rt1_assignment2/local_setup.bash
+[16.766s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/share/rt1_assignment2/local_setup.sh
+[16.766s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/share/rt1_assignment2/local_setup.zsh
+[16.766s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/share/rt1_assignment2/local_setup.dsv
+[16.766s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/share/rt1_assignment2/package.dsv
+[16.766s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/share/ament_index/resource_index/packages/rt1_assignment2
+[16.766s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/share/rt1_assignment2/cmake/export_rt1_assignment2__rosidl_generator_cExport.cmake
+[16.766s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/share/rt1_assignment2/cmake/export_rt1_assignment2__rosidl_generator_cExport-noconfig.cmake
+[16.766s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/share/rt1_assignment2/cmake/export_rt1_assignment2__rosidl_typesupport_fastrtps_cExport.cmake
+[16.766s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/share/rt1_assignment2/cmake/export_rt1_assignment2__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[16.766s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/share/rt1_assignment2/cmake/export_rt1_assignment2__rosidl_generator_cppExport.cmake
+[16.766s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/share/rt1_assignment2/cmake/export_rt1_assignment2__rosidl_typesupport_fastrtps_cppExport.cmake
+[16.766s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/share/rt1_assignment2/cmake/export_rt1_assignment2__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[16.767s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/share/rt1_assignment2/cmake/rt1_assignment2__rosidl_typesupport_introspection_cExport.cmake
+[16.767s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/share/rt1_assignment2/cmake/rt1_assignment2__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[16.767s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/share/rt1_assignment2/cmake/rt1_assignment2__rosidl_typesupport_cExport.cmake
+[16.767s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/share/rt1_assignment2/cmake/rt1_assignment2__rosidl_typesupport_cExport-noconfig.cmake
+[16.767s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/share/rt1_assignment2/cmake/rt1_assignment2__rosidl_typesupport_introspection_cppExport.cmake
+[16.767s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/share/rt1_assignment2/cmake/rt1_assignment2__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[16.767s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/share/rt1_assignment2/cmake/rt1_assignment2__rosidl_typesupport_cppExport.cmake
+[16.767s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/share/rt1_assignment2/cmake/rt1_assignment2__rosidl_typesupport_cppExport-noconfig.cmake
+[16.767s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/share/rt1_assignment2/cmake/export_rt1_assignment2__rosidl_generator_pyExport.cmake
+[16.767s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/share/rt1_assignment2/cmake/export_rt1_assignment2__rosidl_generator_pyExport-noconfig.cmake
+[16.767s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/share/rt1_assignment2/cmake/rosidl_cmake-extras.cmake
+[16.767s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/share/rt1_assignment2/cmake/ament_cmake_export_dependencies-extras.cmake
+[16.767s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/share/rt1_assignment2/cmake/ament_cmake_export_include_directories-extras.cmake
+[16.767s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/share/rt1_assignment2/cmake/ament_cmake_export_libraries-extras.cmake
+[16.767s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/share/rt1_assignment2/cmake/ament_cmake_export_targets-extras.cmake
+[16.767s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/share/rt1_assignment2/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[16.768s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/share/rt1_assignment2/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[16.768s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/share/rt1_assignment2/cmake/rt1_assignment2Config.cmake
+[16.768s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/share/rt1_assignment2/cmake/rt1_assignment2Config-version.cmake
+[16.768s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/share/rt1_assignment2/package.xml
+[16.768s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/lib/rt1_assignment2/safety_controller
+[16.769s] -- Set non-toolchain portion of runtime path of "/home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/lib/rt1_assignment2/safety_controller" to ""
+[16.770s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/lib/rt1_assignment2/user_interface
+[16.770s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/share/rt1_assignment2//launch
+[16.770s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/share/rt1_assignment2//launch/assignment2.launch.py
+[16.771s] Invoked command in '/home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/build/rt1_assignment2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/build/rt1_assignment2

@@ -1,0 +1,535 @@
+[0.000000] (-) TimerEvent: {}
+[0.000325] (rt1_assignment2) JobQueued: {'identifier': 'rt1_assignment2', 'dependencies': OrderedDict()}
+[0.000362] (rt1_assignment2) JobStarted: {'identifier': 'rt1_assignment2'}
+[0.004280] (rt1_assignment2) JobProgress: {'identifier': 'rt1_assignment2', 'progress': 'cmake'}
+[0.004903] (rt1_assignment2) Command: {'cmd': ['/usr/bin/cmake', '/home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/src/rt1_assignment2', '-DCMAKE_INSTALL_PREFIX=/home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2'], 'cwd': '/home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/build/rt1_assignment2', 'env': OrderedDict({'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'USER': 'ertoto', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'wayland', 'GIT_ASKPASS': '/usr/share/antigravity/resources/app/extensions/git/dist/askpass.sh', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'ANTIGRAVITY_CLI_ALIAS': 'agy', 'HOME': '/home/ertoto', 'CHROME_DESKTOP': 'antigravity.desktop', 'OLDPWD': '/home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2', 'TERM_PROGRAM_VERSION': '1.104.0', 'DESKTOP_SESSION': 'ubuntu', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/antigravity.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'PAGER': 'cat', 'VSCODE_GIT_ASKPASS_MAIN': '/usr/share/antigravity/resources/app/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/usr/share/antigravity/antigravity', 'MANAGERPID': '2895', 'SYSTEMD_EXEC_PID': '3224', 'IM_CONFIG_CHECK_ENV': '1', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'ANTIGRAVITY_AGENT': '1', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '6672', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ertoto', 'JOURNAL_STREAM': '9:39536', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'ertoto', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/home/ertoto/.local/bin:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/ertoto/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/ertoto/.local/bin:/home/ertoto/.local/bin:/home/ertoto/.local/bin:/home/ertoto/.local/bin', 'SESSION_MANAGER': 'local/ertotoPc:@/tmp/.ICE-unix/3176,unix/ertotoPc:/tmp/.ICE-unix/3176', 'INVOCATION_ID': '1f3d12b9e933487ba430c62369aa61cc', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'Unity', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.JSP4I3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'SBX_CHROME_API_RQ': '1', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-f2c2eae54d.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'ORIGINAL_XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GJS_DEBUG_OUTPUT': 'stderr', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/build/rt1_assignment2', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.100191] (-) TimerEvent: {}
+[0.130720] (rt1_assignment2) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[0.200362] (-) TimerEvent: {}
+[0.300977] (-) TimerEvent: {}
+[0.302079] (rt1_assignment2) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[0.353409] (rt1_assignment2) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.401192] (-) TimerEvent: {}
+[0.501896] (-) TimerEvent: {}
+[0.602624] (-) TimerEvent: {}
+[0.617175] (rt1_assignment2) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.644513] (rt1_assignment2) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.645621] (rt1_assignment2) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.646895] (rt1_assignment2) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.677040] (rt1_assignment2) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.702757] (-) TimerEvent: {}
+[0.803452] (-) TimerEvent: {}
+[0.904203] (-) TimerEvent: {}
+[0.956971] (rt1_assignment2) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.987189] (rt1_assignment2) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.988007] (rt1_assignment2) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.989342] (rt1_assignment2) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.998307] (rt1_assignment2) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[1.004426] (-) TimerEvent: {}
+[1.104963] (-) TimerEvent: {}
+[1.205439] (-) TimerEvent: {}
+[1.306014] (-) TimerEvent: {}
+[1.406549] (-) TimerEvent: {}
+[1.457831] (rt1_assignment2) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[1.506814] (-) TimerEvent: {}
+[1.607541] (-) TimerEvent: {}
+[1.708255] (-) TimerEvent: {}
+[1.795502] (rt1_assignment2) StdoutLine: {'line': b'-- Found rclcpp: 28.1.13 (/opt/ros/jazzy/share/rclcpp/cmake)\n'}
+[1.808424] (-) TimerEvent: {}
+[1.895053] (rt1_assignment2) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[1.905571] (rt1_assignment2) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[1.908461] (-) TimerEvent: {}
+[1.914543] (rt1_assignment2) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.924216] (rt1_assignment2) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.965798] (rt1_assignment2) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)\n'}
+[1.967356] (rt1_assignment2) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)\n'}
+[2.008603] (-) TimerEvent: {}
+[2.087764] (rt1_assignment2) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  \n'}
+[2.108846] (-) TimerEvent: {}
+[2.151216] (rt1_assignment2) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") \n'}
+[2.209083] (-) TimerEvent: {}
+[2.229258] (rt1_assignment2) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[2.309275] (-) TimerEvent: {}
+[2.409706] (-) TimerEvent: {}
+[2.413794] (rt1_assignment2) StdoutLine: {'line': b'-- Found std_msgs: 5.3.6 (/opt/ros/jazzy/share/std_msgs/cmake)\n'}
+[2.422375] (rt1_assignment2) StdoutLine: {'line': b'-- Found geometry_msgs: 5.3.6 (/opt/ros/jazzy/share/geometry_msgs/cmake)\n'}
+[2.431013] (rt1_assignment2) StdoutLine: {'line': b'-- Found sensor_msgs: 5.3.6 (/opt/ros/jazzy/share/sensor_msgs/cmake)\n'}
+[2.444368] (rt1_assignment2) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)\n'}
+[2.452690] (rt1_assignment2) StdoutLine: {'line': b'-- Found rosidl_adapter: 4.6.6 (/opt/ros/jazzy/share/rosidl_adapter/cmake)\n'}
+[2.509926] (-) TimerEvent: {}
+[2.610441] (-) TimerEvent: {}
+[2.711013] (-) TimerEvent: {}
+[2.811546] (-) TimerEvent: {}
+[2.912131] (-) TimerEvent: {}
+[3.012575] (-) TimerEvent: {}
+[3.112927] (-) TimerEvent: {}
+[3.213486] (-) TimerEvent: {}
+[3.313990] (-) TimerEvent: {}
+[3.414532] (-) TimerEvent: {}
+[3.515139] (-) TimerEvent: {}
+[3.615695] (-) TimerEvent: {}
+[3.716179] (-) TimerEvent: {}
+[3.816722] (-) TimerEvent: {}
+[3.917355] (-) TimerEvent: {}
+[4.024962] (-) TimerEvent: {}
+[4.087640] (rt1_assignment2) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)\n'}
+[4.125131] (-) TimerEvent: {}
+[4.225601] (-) TimerEvent: {}
+[4.326142] (-) TimerEvent: {}
+[4.426694] (-) TimerEvent: {}
+[4.527281] (-) TimerEvent: {}
+[4.627860] (-) TimerEvent: {}
+[4.728522] (-) TimerEvent: {}
+[4.829144] (-) TimerEvent: {}
+[4.929764] (-) TimerEvent: {}
+[5.030265] (-) TimerEvent: {}
+[5.130826] (-) TimerEvent: {}
+[5.231377] (-) TimerEvent: {}
+[5.331821] (-) TimerEvent: {}
+[5.432387] (-) TimerEvent: {}
+[5.532955] (-) TimerEvent: {}
+[5.633466] (-) TimerEvent: {}
+[5.733942] (-) TimerEvent: {}
+[5.834477] (-) TimerEvent: {}
+[5.935102] (-) TimerEvent: {}
+[6.035664] (-) TimerEvent: {}
+[6.136263] (-) TimerEvent: {}
+[6.236799] (-) TimerEvent: {}
+[6.337231] (-) TimerEvent: {}
+[6.437908] (-) TimerEvent: {}
+[6.538503] (-) TimerEvent: {}
+[6.589712] (rt1_assignment2) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[6.638680] (-) TimerEvent: {}
+[6.739245] (-) TimerEvent: {}
+[6.839787] (-) TimerEvent: {}
+[6.940434] (-) TimerEvent: {}
+[7.041099] (-) TimerEvent: {}
+[7.141735] (-) TimerEvent: {}
+[7.242387] (-) TimerEvent: {}
+[7.343001] (-) TimerEvent: {}
+[7.443742] (-) TimerEvent: {}
+[7.544449] (-) TimerEvent: {}
+[7.645177] (-) TimerEvent: {}
+[7.668332] (rt1_assignment2) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[7.679779] (rt1_assignment2) StdoutLine: {'line': b'-- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)\n'}
+[7.745415] (-) TimerEvent: {}
+[7.846020] (-) TimerEvent: {}
+[7.946714] (-) TimerEvent: {}
+[8.047456] (-) TimerEvent: {}
+[8.113005] (rt1_assignment2) StdoutLine: {'line': b'-- Found PythonExtra: /usr/bin/python3  \n'}
+[8.147678] (-) TimerEvent: {}
+[8.248407] (-) TimerEvent: {}
+[8.349101] (-) TimerEvent: {}
+[8.449676] (-) TimerEvent: {}
+[8.550283] (-) TimerEvent: {}
+[8.650872] (-) TimerEvent: {}
+[8.751496] (-) TimerEvent: {}
+[8.852354] (-) TimerEvent: {}
+[8.952880] (-) TimerEvent: {}
+[9.053196] (-) TimerEvent: {}
+[9.153853] (-) TimerEvent: {}
+[9.198135] (rt1_assignment2) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed \n'}
+[9.254095] (-) TimerEvent: {}
+[9.292431] (rt1_assignment2) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.17.3 (/opt/ros/jazzy/share/ament_lint_auto/cmake)\n'}
+[9.354204] (rt1_assignment2) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[9.354493] (-) TimerEvent: {}
+[9.355037] (rt1_assignment2) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[9.355305] (rt1_assignment2) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[9.356339] (rt1_assignment2) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[9.356571] (rt1_assignment2) StdoutLine: {'line': b"-- Configured 'flake8' exclude dirs and/or files: \n"}
+[9.357589] (rt1_assignment2) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[9.358685] (rt1_assignment2) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[9.360408] (rt1_assignment2) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[9.360608] (rt1_assignment2) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[9.361439] (rt1_assignment2) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[9.367110] (rt1_assignment2) StderrLine: {'line': b'\x1b[0mCMake Deprecation Warning at /opt/ros/jazzy/share/rosidl_cmake/cmake/rosidl_target_interfaces.cmake:32 (message):\n'}
+[9.367333] (rt1_assignment2) StderrLine: {'line': b'  Use rosidl_get_typesupport_target() and target_link_libraries() instead of\n'}
+[9.367587] (rt1_assignment2) StderrLine: {'line': b'  rosidl_target_interfaces().  i.e:\n'}
+[9.367739] (rt1_assignment2) StderrLine: {'line': b'\n'}
+[9.367811] (rt1_assignment2) StderrLine: {'line': b'    rosidl_get_typesupport_target(cpp_typesupport_target "${PROJECT_NAME}" "rosidl_typesupport_cpp")\n'}
+[9.367878] (rt1_assignment2) StderrLine: {'line': b'    target_link_libraries(${PROJECT_NAME}_node "${cpp_typesupport_target}")\n'}
+[9.367940] (rt1_assignment2) StderrLine: {'line': b'\n'}
+[9.368001] (rt1_assignment2) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[9.368074] (rt1_assignment2) StderrLine: {'line': b'  CMakeLists.txt:34 (rosidl_target_interfaces)\n'}
+[9.368130] (rt1_assignment2) StderrLine: {'line': b'\n'}
+[9.368193] (rt1_assignment2) StderrLine: {'line': b'\x1b[0m\n'}
+[9.368258] (rt1_assignment2) StdoutLine: {'line': b'-- Configuring done (9.4s)\n'}
+[9.400745] (rt1_assignment2) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[9.407260] (rt1_assignment2) StdoutLine: {'line': b'-- Build files have been written to: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/build/rt1_assignment2\n'}
+[9.414797] (rt1_assignment2) CommandEnded: {'returncode': 0}
+[9.415088] (rt1_assignment2) JobProgress: {'identifier': 'rt1_assignment2', 'progress': 'build'}
+[9.415757] (rt1_assignment2) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/build/rt1_assignment2', '--', '-j32', '-l32'], 'cwd': '/home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/build/rt1_assignment2', 'env': OrderedDict({'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'USER': 'ertoto', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'wayland', 'GIT_ASKPASS': '/usr/share/antigravity/resources/app/extensions/git/dist/askpass.sh', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'ANTIGRAVITY_CLI_ALIAS': 'agy', 'HOME': '/home/ertoto', 'CHROME_DESKTOP': 'antigravity.desktop', 'OLDPWD': '/home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2', 'TERM_PROGRAM_VERSION': '1.104.0', 'DESKTOP_SESSION': 'ubuntu', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/antigravity.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'PAGER': 'cat', 'VSCODE_GIT_ASKPASS_MAIN': '/usr/share/antigravity/resources/app/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/usr/share/antigravity/antigravity', 'MANAGERPID': '2895', 'SYSTEMD_EXEC_PID': '3224', 'IM_CONFIG_CHECK_ENV': '1', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'ANTIGRAVITY_AGENT': '1', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '6672', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ertoto', 'JOURNAL_STREAM': '9:39536', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'ertoto', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/home/ertoto/.local/bin:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/ertoto/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/ertoto/.local/bin:/home/ertoto/.local/bin:/home/ertoto/.local/bin:/home/ertoto/.local/bin', 'SESSION_MANAGER': 'local/ertotoPc:@/tmp/.ICE-unix/3176,unix/ertotoPc:/tmp/.ICE-unix/3176', 'INVOCATION_ID': '1f3d12b9e933487ba430c62369aa61cc', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'Unity', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.JSP4I3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'SBX_CHROME_API_RQ': '1', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-f2c2eae54d.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'ORIGINAL_XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GJS_DEBUG_OUTPUT': 'stderr', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/build/rt1_assignment2', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[9.454742] (-) TimerEvent: {}
+[9.555340] (-) TimerEvent: {}
+[9.557036] (rt1_assignment2) StdoutLine: {'line': b'[  1%] \x1b[34m\x1b[1mGenerating type hashes for ROS interfaces\x1b[0m\n'}
+[9.586456] (rt1_assignment2) StdoutLine: {'line': b'[  1%] Built target ament_cmake_python_copy_rt1_assignment2\n'}
+[9.655501] (-) TimerEvent: {}
+[9.756172] (-) TimerEvent: {}
+[9.856672] (-) TimerEvent: {}
+[9.957094] (-) TimerEvent: {}
+[9.965346] (rt1_assignment2) StdoutLine: {'line': b'running egg_info\n'}
+[9.965638] (rt1_assignment2) StdoutLine: {'line': b'creating rt1_assignment2.egg-info\n'}
+[9.968508] (rt1_assignment2) StdoutLine: {'line': b'[  1%] Built target rt1_assignment2__rosidl_generator_type_description\n'}
+[9.973242] (rt1_assignment2) StdoutLine: {'line': b'writing rt1_assignment2.egg-info/PKG-INFO\n'}
+[9.973335] (rt1_assignment2) StdoutLine: {'line': b'writing dependency_links to rt1_assignment2.egg-info/dependency_links.txt\n'}
+[9.973482] (rt1_assignment2) StdoutLine: {'line': b'writing top-level names to rt1_assignment2.egg-info/top_level.txt\n'}
+[9.973549] (rt1_assignment2) StdoutLine: {'line': b"writing manifest file 'rt1_assignment2.egg-info/SOURCES.txt'\n"}
+[9.975364] (rt1_assignment2) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[9.983308] (rt1_assignment2) StdoutLine: {'line': b'[  5%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[9.996372] (rt1_assignment2) StdoutLine: {'line': b"reading manifest file 'rt1_assignment2.egg-info/SOURCES.txt'\n"}
+[9.996571] (rt1_assignment2) StdoutLine: {'line': b"writing manifest file 'rt1_assignment2.egg-info/SOURCES.txt'\n"}
+[10.013509] (rt1_assignment2) StdoutLine: {'line': b'[  5%] Built target ament_cmake_python_build_rt1_assignment2_egg\n'}
+[10.057211] (-) TimerEvent: {}
+[10.157507] (-) TimerEvent: {}
+[10.180578] (rt1_assignment2) StdoutLine: {'line': b'[  5%] Built target rt1_assignment2__cpp\n'}
+[10.201474] (rt1_assignment2) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/rt1_assignment2__rosidl_generator_c.dir/rosidl_generator_c/rt1_assignment2/msg/detail/info__description.c.o\x1b[0m\n'}
+[10.202894] (rt1_assignment2) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding C object CMakeFiles/rt1_assignment2__rosidl_generator_c.dir/rosidl_generator_c/rt1_assignment2/srv/detail/set_threshold__type_support.c.o\x1b[0m\n'}
+[10.203718] (rt1_assignment2) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/rt1_assignment2__rosidl_generator_c.dir/rosidl_generator_c/rt1_assignment2/msg/detail/info__type_support.c.o\x1b[0m\n'}
+[10.203930] (rt1_assignment2) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/rt1_assignment2__rosidl_generator_c.dir/rosidl_generator_c/rt1_assignment2/srv/detail/set_threshold__description.c.o\x1b[0m\n'}
+[10.204083] (rt1_assignment2) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding C object CMakeFiles/rt1_assignment2__rosidl_generator_c.dir/rosidl_generator_c/rt1_assignment2/msg/detail/info__functions.c.o\x1b[0m\n'}
+[10.204380] (rt1_assignment2) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding C object CMakeFiles/rt1_assignment2__rosidl_generator_c.dir/rosidl_generator_c/rt1_assignment2/srv/detail/get_avg_vel__type_support.c.o\x1b[0m\n'}
+[10.206151] (rt1_assignment2) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding C object CMakeFiles/rt1_assignment2__rosidl_generator_c.dir/rosidl_generator_c/rt1_assignment2/srv/detail/set_threshold__functions.c.o\x1b[0m\n'}
+[10.207278] (rt1_assignment2) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding C object CMakeFiles/rt1_assignment2__rosidl_generator_c.dir/rosidl_generator_c/rt1_assignment2/srv/detail/get_avg_vel__description.c.o\x1b[0m\n'}
+[10.207538] (rt1_assignment2) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding C object CMakeFiles/rt1_assignment2__rosidl_generator_c.dir/rosidl_generator_c/rt1_assignment2/srv/detail/get_avg_vel__functions.c.o\x1b[0m\n'}
+[10.257736] (-) TimerEvent: {}
+[10.321527] (rt1_assignment2) StdoutLine: {'line': b'[ 23%] \x1b[32m\x1b[1mLinking C shared library librt1_assignment2__rosidl_generator_c.so\x1b[0m\n'}
+[10.357986] (-) TimerEvent: {}
+[10.430809] (rt1_assignment2) StdoutLine: {'line': b'[ 23%] Built target rt1_assignment2__rosidl_generator_c\n'}
+[10.458243] (-) TimerEvent: {}
+[10.466796] (rt1_assignment2) StdoutLine: {'line': b'[ 25%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[10.468501] (rt1_assignment2) StdoutLine: {'line': b'[ 26%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[10.470252] (rt1_assignment2) StdoutLine: {'line': b'[ 28%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[10.471051] (rt1_assignment2) StdoutLine: {'line': b'[ 32%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[10.471593] (rt1_assignment2) StdoutLine: {'line': b'[ 32%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[10.471932] (rt1_assignment2) StdoutLine: {'line': b'[ 33%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[10.558521] (-) TimerEvent: {}
+[10.659042] (-) TimerEvent: {}
+[10.702864] (rt1_assignment2) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/rt1_assignment2__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rt1_assignment2/msg/info__type_support.cpp.o\x1b[0m\n'}
+[10.703044] (rt1_assignment2) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/rt1_assignment2__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rt1_assignment2/srv/get_avg_vel__type_support.cpp.o\x1b[0m\n'}
+[10.703136] (rt1_assignment2) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/rt1_assignment2__rosidl_typesupport_c.dir/rosidl_typesupport_c/rt1_assignment2/msg/info__type_support.cpp.o\x1b[0m\n'}
+[10.703207] (rt1_assignment2) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/rt1_assignment2__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rt1_assignment2/srv/set_threshold__type_support.cpp.o\x1b[0m\n'}
+[10.703274] (rt1_assignment2) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/rt1_assignment2__rosidl_typesupport_c.dir/rosidl_typesupport_c/rt1_assignment2/srv/set_threshold__type_support.cpp.o\x1b[0m\n'}
+[10.703724] (rt1_assignment2) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding CXX object CMakeFiles/rt1_assignment2__rosidl_typesupport_c.dir/rosidl_typesupport_c/rt1_assignment2/srv/get_avg_vel__type_support.cpp.o\x1b[0m\n'}
+[10.721412] (rt1_assignment2) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object CMakeFiles/rt1_assignment2__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/rt1_assignment2/msg/detail/info__type_support.cpp.o\x1b[0m\n'}
+[10.722623] (rt1_assignment2) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding CXX object CMakeFiles/rt1_assignment2__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/rt1_assignment2/srv/detail/set_threshold__type_support.cpp.o\x1b[0m\n'}
+[10.722738] (rt1_assignment2) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/rt1_assignment2__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/rt1_assignment2/srv/detail/get_avg_vel__type_support.cpp.o\x1b[0m\n'}
+[10.727570] (rt1_assignment2) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding C object CMakeFiles/rt1_assignment2__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/rt1_assignment2/msg/detail/info__type_support.c.o\x1b[0m\n'}
+[10.727744] (rt1_assignment2) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding C object CMakeFiles/rt1_assignment2__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/rt1_assignment2/srv/detail/get_avg_vel__type_support.c.o\x1b[0m\n'}
+[10.727819] (rt1_assignment2) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding C object CMakeFiles/rt1_assignment2__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/rt1_assignment2/srv/detail/set_threshold__type_support.c.o\x1b[0m\n'}
+[10.741034] (rt1_assignment2) StdoutLine: {'line': b'[ 57%] \x1b[32m\x1b[1mLinking CXX shared library librt1_assignment2__rosidl_typesupport_c.so\x1b[0m\n'}
+[10.755569] (rt1_assignment2) StdoutLine: {'line': b'[ 58%] \x1b[32m\x1b[1mLinking C shared library librt1_assignment2__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[10.759202] (-) TimerEvent: {}
+[10.764485] (rt1_assignment2) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/rt1_assignment2__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/rt1_assignment2/msg/detail/dds_fastrtps/info__type_support.cpp.o\x1b[0m\n'}
+[10.765520] (rt1_assignment2) StdoutLine: {'line': b'[ 60%] Built target rt1_assignment2__rosidl_typesupport_c\n'}
+[10.766585] (rt1_assignment2) StdoutLine: {'line': b'[ 62%] \x1b[32mBuilding CXX object CMakeFiles/rt1_assignment2__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/rt1_assignment2/srv/detail/dds_fastrtps/set_threshold__type_support.cpp.o\x1b[0m\n'}
+[10.767031] (rt1_assignment2) StdoutLine: {'line': b'[ 64%] \x1b[32mBuilding CXX object CMakeFiles/rt1_assignment2__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/rt1_assignment2/srv/detail/dds_fastrtps/get_avg_vel__type_support.cpp.o\x1b[0m\n'}
+[10.772753] (rt1_assignment2) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/rt1_assignment2__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/rt1_assignment2/msg/detail/info__type_support_c.cpp.o\x1b[0m\n'}
+[10.772937] (rt1_assignment2) StdoutLine: {'line': b'[ 69%] \x1b[32mBuilding CXX object CMakeFiles/rt1_assignment2__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/rt1_assignment2/srv/detail/set_threshold__type_support_c.cpp.o\x1b[0m\n'}
+[10.773022] (rt1_assignment2) StdoutLine: {'line': b'[ 69%] \x1b[32mBuilding CXX object CMakeFiles/rt1_assignment2__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/rt1_assignment2/srv/detail/get_avg_vel__type_support_c.cpp.o\x1b[0m\n'}
+[10.776852] (rt1_assignment2) StdoutLine: {'line': b'[ 69%] Built target rt1_assignment2__rosidl_typesupport_introspection_c\n'}
+[10.859322] (-) TimerEvent: {}
+[10.959606] (-) TimerEvent: {}
+[11.005711] (rt1_assignment2) StdoutLine: {'line': b'[ 71%] \x1b[32m\x1b[1mLinking CXX shared library librt1_assignment2__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[11.009867] (rt1_assignment2) StdoutLine: {'line': b'[ 73%] \x1b[32m\x1b[1mLinking CXX shared library librt1_assignment2__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[11.016703] (rt1_assignment2) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX shared library librt1_assignment2__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[11.059744] (-) TimerEvent: {}
+[11.060851] (rt1_assignment2) StdoutLine: {'line': b'[ 75%] Built target rt1_assignment2__rosidl_typesupport_introspection_cpp\n'}
+[11.061686] (rt1_assignment2) StdoutLine: {'line': b'[ 75%] Built target rt1_assignment2__rosidl_typesupport_fastrtps_c\n'}
+[11.070830] (rt1_assignment2) StdoutLine: {'line': b'[ 75%] Built target rt1_assignment2__rosidl_typesupport_cpp\n'}
+[11.146882] (rt1_assignment2) StdoutLine: {'line': b'[ 76%] \x1b[32m\x1b[1mLinking CXX shared library librt1_assignment2__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[11.159978] (-) TimerEvent: {}
+[11.260662] (-) TimerEvent: {}
+[11.326285] (rt1_assignment2) StdoutLine: {'line': b'[ 76%] Built target rt1_assignment2__rosidl_typesupport_fastrtps_cpp\n'}
+[11.360952] (-) TimerEvent: {}
+[11.384038] (rt1_assignment2) StdoutLine: {'line': b'[ 76%] Built target rt1_assignment2\n'}
+[11.444847] (rt1_assignment2) StdoutLine: {'line': b'[ 78%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[11.448043] (rt1_assignment2) StdoutLine: {'line': b'[ 80%] \x1b[32mBuilding CXX object CMakeFiles/safety_controller.dir/src/safety_controller.cpp.o\x1b[0m\n'}
+[11.461251] (-) TimerEvent: {}
+[11.561953] (-) TimerEvent: {}
+[11.662718] (-) TimerEvent: {}
+[11.763300] (-) TimerEvent: {}
+[11.842868] (rt1_assignment2) StdoutLine: {'line': b'[ 80%] Built target rt1_assignment2__py\n'}
+[11.856302] (rt1_assignment2) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding C object CMakeFiles/rt1_assignment2__rosidl_generator_py.dir/rosidl_generator_py/rt1_assignment2/msg/_info_s.c.o\x1b[0m\n'}
+[11.856591] (rt1_assignment2) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding C object CMakeFiles/rt1_assignment2__rosidl_generator_py.dir/rosidl_generator_py/rt1_assignment2/srv/_set_threshold_s.c.o\x1b[0m\n'}
+[11.856737] (rt1_assignment2) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/rt1_assignment2__rosidl_generator_py.dir/rosidl_generator_py/rt1_assignment2/srv/_get_avg_vel_s.c.o\x1b[0m\n'}
+[11.863329] (-) TimerEvent: {}
+[11.931963] (rt1_assignment2) StdoutLine: {'line': b'[ 87%] \x1b[32m\x1b[1mLinking C shared library librt1_assignment2__rosidl_generator_py.so\x1b[0m\n'}
+[11.963584] (rt1_assignment2) StdoutLine: {'line': b'[ 87%] Built target rt1_assignment2__rosidl_generator_py\n'}
+[11.963761] (-) TimerEvent: {}
+[11.979832] (rt1_assignment2) StdoutLine: {'line': b'[ 89%] \x1b[32mBuilding C object CMakeFiles/rt1_assignment2_s__rosidl_typesupport_c.dir/rosidl_generator_py/rt1_assignment2/_rt1_assignment2_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[11.980579] (rt1_assignment2) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding C object CMakeFiles/rt1_assignment2_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/rt1_assignment2/_rt1_assignment2_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[11.980932] (rt1_assignment2) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/rt1_assignment2_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/rt1_assignment2/_rt1_assignment2_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[12.041474] (rt1_assignment2) StdoutLine: {'line': b'[ 98%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/rt1_assignment2/rt1_assignment2_s__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[12.041636] (rt1_assignment2) StdoutLine: {'line': b'[ 98%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/rt1_assignment2/rt1_assignment2_s__rosidl_typesupport_c.so\x1b[0m\n'}
+[12.041704] (rt1_assignment2) StdoutLine: {'line': b'[ 98%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/rt1_assignment2/rt1_assignment2_s__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[12.063978] (-) TimerEvent: {}
+[12.065430] (rt1_assignment2) StdoutLine: {'line': b'[ 98%] Built target rt1_assignment2_s__rosidl_typesupport_c\n'}
+[12.065534] (rt1_assignment2) StdoutLine: {'line': b'[ 98%] Built target rt1_assignment2_s__rosidl_typesupport_fastrtps_c\n'}
+[12.065571] (rt1_assignment2) StdoutLine: {'line': b'[ 98%] Built target rt1_assignment2_s__rosidl_typesupport_introspection_c\n'}
+[12.164071] (-) TimerEvent: {}
+[12.264311] (-) TimerEvent: {}
+[12.364512] (-) TimerEvent: {}
+[12.464723] (-) TimerEvent: {}
+[12.564945] (-) TimerEvent: {}
+[12.665303] (-) TimerEvent: {}
+[12.765489] (-) TimerEvent: {}
+[12.865720] (-) TimerEvent: {}
+[12.966022] (-) TimerEvent: {}
+[13.066279] (-) TimerEvent: {}
+[13.166467] (-) TimerEvent: {}
+[13.266690] (-) TimerEvent: {}
+[13.367025] (-) TimerEvent: {}
+[13.467263] (-) TimerEvent: {}
+[13.567459] (-) TimerEvent: {}
+[13.667714] (-) TimerEvent: {}
+[13.768050] (-) TimerEvent: {}
+[13.868304] (-) TimerEvent: {}
+[13.968488] (-) TimerEvent: {}
+[14.068705] (-) TimerEvent: {}
+[14.169028] (-) TimerEvent: {}
+[14.269276] (-) TimerEvent: {}
+[14.369526] (-) TimerEvent: {}
+[14.469751] (-) TimerEvent: {}
+[14.570010] (-) TimerEvent: {}
+[14.670276] (-) TimerEvent: {}
+[14.770454] (-) TimerEvent: {}
+[14.870657] (-) TimerEvent: {}
+[14.970990] (-) TimerEvent: {}
+[15.071281] (-) TimerEvent: {}
+[15.171459] (-) TimerEvent: {}
+[15.271680] (-) TimerEvent: {}
+[15.372008] (-) TimerEvent: {}
+[15.472248] (-) TimerEvent: {}
+[15.572424] (-) TimerEvent: {}
+[15.672642] (-) TimerEvent: {}
+[15.772911] (-) TimerEvent: {}
+[15.873149] (-) TimerEvent: {}
+[15.973439] (-) TimerEvent: {}
+[16.073625] (-) TimerEvent: {}
+[16.173910] (-) TimerEvent: {}
+[16.274137] (-) TimerEvent: {}
+[16.374288] (-) TimerEvent: {}
+[16.474462] (-) TimerEvent: {}
+[16.574650] (-) TimerEvent: {}
+[16.674847] (-) TimerEvent: {}
+[16.775198] (-) TimerEvent: {}
+[16.875415] (-) TimerEvent: {}
+[16.953632] (rt1_assignment2) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable safety_controller\x1b[0m\n'}
+[16.975690] (-) TimerEvent: {}
+[17.076283] (-) TimerEvent: {}
+[17.177026] (-) TimerEvent: {}
+[17.277704] (-) TimerEvent: {}
+[17.378124] (-) TimerEvent: {}
+[17.388041] (rt1_assignment2) StdoutLine: {'line': b'[100%] Built target safety_controller\n'}
+[17.399893] (rt1_assignment2) CommandEnded: {'returncode': 0}
+[17.400330] (rt1_assignment2) JobProgress: {'identifier': 'rt1_assignment2', 'progress': 'install'}
+[17.408212] (rt1_assignment2) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/build/rt1_assignment2'], 'cwd': '/home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/build/rt1_assignment2', 'env': OrderedDict({'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'USER': 'ertoto', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'wayland', 'GIT_ASKPASS': '/usr/share/antigravity/resources/app/extensions/git/dist/askpass.sh', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'ANTIGRAVITY_CLI_ALIAS': 'agy', 'HOME': '/home/ertoto', 'CHROME_DESKTOP': 'antigravity.desktop', 'OLDPWD': '/home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2', 'TERM_PROGRAM_VERSION': '1.104.0', 'DESKTOP_SESSION': 'ubuntu', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/antigravity.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'PAGER': 'cat', 'VSCODE_GIT_ASKPASS_MAIN': '/usr/share/antigravity/resources/app/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/usr/share/antigravity/antigravity', 'MANAGERPID': '2895', 'SYSTEMD_EXEC_PID': '3224', 'IM_CONFIG_CHECK_ENV': '1', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'ANTIGRAVITY_AGENT': '1', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '6672', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ertoto', 'JOURNAL_STREAM': '9:39536', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'ertoto', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/home/ertoto/.local/bin:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/ertoto/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/ertoto/.local/bin:/home/ertoto/.local/bin:/home/ertoto/.local/bin:/home/ertoto/.local/bin', 'SESSION_MANAGER': 'local/ertotoPc:@/tmp/.ICE-unix/3176,unix/ertotoPc:/tmp/.ICE-unix/3176', 'INVOCATION_ID': '1f3d12b9e933487ba430c62369aa61cc', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'Unity', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.JSP4I3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'SBX_CHROME_API_RQ': '1', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-f2c2eae54d.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'ORIGINAL_XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GJS_DEBUG_OUTPUT': 'stderr', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/build/rt1_assignment2', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[17.415932] (rt1_assignment2) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[17.416103] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/share/ament_index/resource_index/rosidl_interfaces/rt1_assignment2\n'}
+[17.416346] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/share/rt1_assignment2/msg/Info.json\n'}
+[17.416522] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/share/rt1_assignment2/srv/SetThreshold.json\n'}
+[17.416719] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/share/rt1_assignment2/srv/GetAvgVel.json\n'}
+[17.416882] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2\n'}
+[17.417005] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/srv\n'}
+[17.417104] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/srv/detail\n'}
+[17.417254] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/srv/detail/set_threshold__struct.h\n'}
+[17.417375] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/srv/detail/set_threshold__description.c\n'}
+[17.417546] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/srv/detail/get_avg_vel__functions.h\n'}
+[17.417714] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/srv/detail/set_threshold__functions.c\n'}
+[17.417875] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/srv/detail/get_avg_vel__type_support.h\n'}
+[17.418014] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/srv/detail/get_avg_vel__description.c\n'}
+[17.418183] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/srv/detail/set_threshold__functions.h\n'}
+[17.418349] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/srv/detail/set_threshold__type_support.c\n'}
+[17.418506] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/srv/detail/get_avg_vel__struct.h\n'}
+[17.418635] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/srv/detail/get_avg_vel__functions.c\n'}
+[17.418801] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/srv/detail/get_avg_vel__type_support.c\n'}
+[17.418940] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/srv/detail/set_threshold__type_support.h\n'}
+[17.419092] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/srv/set_threshold.h\n'}
+[17.419222] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/srv/get_avg_vel.h\n'}
+[17.419349] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/msg\n'}
+[17.419450] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/msg/rosidl_generator_c__visibility_control.h\n'}
+[17.419602] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/msg/detail\n'}
+[17.419703] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/msg/detail/info__type_support.c\n'}
+[17.419840] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/msg/detail/info__functions.h\n'}
+[17.419993] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/msg/detail/info__type_support.h\n'}
+[17.420229] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/msg/detail/info__struct.h\n'}
+[17.420394] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/msg/detail/info__description.c\n'}
+[17.420466] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/msg/detail/info__functions.c\n'}
+[17.420558] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/msg/info.h\n'}
+[17.420619] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/share/rt1_assignment2/environment/library_path.sh\n'}
+[17.420696] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/share/rt1_assignment2/environment/library_path.dsv\n'}
+[17.420770] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/lib/librt1_assignment2__rosidl_generator_c.so\n'}
+[17.421017] (rt1_assignment2) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/lib/librt1_assignment2__rosidl_generator_c.so" to ""\n'}
+[17.421127] (rt1_assignment2) StdoutLine: {'line': b'-- Up-to-date: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2\n'}
+[17.421228] (rt1_assignment2) StdoutLine: {'line': b'-- Up-to-date: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/srv\n'}
+[17.421290] (rt1_assignment2) StdoutLine: {'line': b'-- Up-to-date: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/srv/detail\n'}
+[17.421351] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/srv/detail/get_avg_vel__rosidl_typesupport_fastrtps_c.h\n'}
+[17.421411] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/srv/detail/set_threshold__rosidl_typesupport_fastrtps_c.h\n'}
+[17.421500] (rt1_assignment2) StdoutLine: {'line': b'-- Up-to-date: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/msg\n'}
+[17.421558] (rt1_assignment2) StdoutLine: {'line': b'-- Up-to-date: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/msg/detail\n'}
+[17.421612] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/msg/detail/info__rosidl_typesupport_fastrtps_c.h\n'}
+[17.421665] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[17.421718] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/lib/librt1_assignment2__rosidl_typesupport_fastrtps_c.so\n'}
+[17.421804] (rt1_assignment2) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/lib/librt1_assignment2__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[17.421864] (rt1_assignment2) StdoutLine: {'line': b'-- Up-to-date: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2\n'}
+[17.421941] (rt1_assignment2) StdoutLine: {'line': b'-- Up-to-date: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/srv\n'}
+[17.422011] (rt1_assignment2) StdoutLine: {'line': b'-- Up-to-date: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/srv/detail\n'}
+[17.422074] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/srv/detail/set_threshold__builder.hpp\n'}
+[17.422164] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/srv/detail/get_avg_vel__builder.hpp\n'}
+[17.422220] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/srv/detail/set_threshold__type_support.hpp\n'}
+[17.422276] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/srv/detail/set_threshold__struct.hpp\n'}
+[17.422331] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/srv/detail/get_avg_vel__type_support.hpp\n'}
+[17.422409] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/srv/detail/get_avg_vel__struct.hpp\n'}
+[17.422468] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/srv/detail/set_threshold__traits.hpp\n'}
+[17.422526] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/srv/detail/get_avg_vel__traits.hpp\n'}
+[17.422611] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/srv/get_avg_vel.hpp\n'}
+[17.422668] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/srv/set_threshold.hpp\n'}
+[17.422726] (rt1_assignment2) StdoutLine: {'line': b'-- Up-to-date: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/msg\n'}
+[17.422782] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[17.422838] (rt1_assignment2) StdoutLine: {'line': b'-- Up-to-date: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/msg/detail\n'}
+[17.422893] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/msg/detail/info__type_support.hpp\n'}
+[17.422982] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/msg/detail/info__struct.hpp\n'}
+[17.423046] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/msg/detail/info__traits.hpp\n'}
+[17.423109] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/msg/detail/info__builder.hpp\n'}
+[17.423167] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/msg/info.hpp\n'}
+[17.423223] (rt1_assignment2) StdoutLine: {'line': b'-- Up-to-date: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2\n'}
+[17.423278] (rt1_assignment2) StdoutLine: {'line': b'-- Up-to-date: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/srv\n'}
+[17.423332] (rt1_assignment2) StdoutLine: {'line': b'-- Up-to-date: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/srv/detail\n'}
+[17.423387] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/srv/detail/get_avg_vel__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[17.423474] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/srv/detail/dds_fastrtps\n'}
+[17.423533] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/srv/detail/set_threshold__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[17.423588] (rt1_assignment2) StdoutLine: {'line': b'-- Up-to-date: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/msg\n'}
+[17.423640] (rt1_assignment2) StdoutLine: {'line': b'-- Up-to-date: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/msg/detail\n'}
+[17.423693] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/msg/detail/info__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[17.423755] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/msg/detail/dds_fastrtps\n'}
+[17.423809] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[17.423866] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/lib/librt1_assignment2__rosidl_typesupport_fastrtps_cpp.so\n'}
+[17.423923] (rt1_assignment2) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/lib/librt1_assignment2__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[17.424011] (rt1_assignment2) StdoutLine: {'line': b'-- Up-to-date: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2\n'}
+[17.424072] (rt1_assignment2) StdoutLine: {'line': b'-- Up-to-date: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/srv\n'}
+[17.424128] (rt1_assignment2) StdoutLine: {'line': b'-- Up-to-date: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/srv/detail\n'}
+[17.424184] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/srv/detail/get_avg_vel__rosidl_typesupport_introspection_c.h\n'}
+[17.424240] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/srv/detail/set_threshold__rosidl_typesupport_introspection_c.h\n'}
+[17.424295] (rt1_assignment2) StdoutLine: {'line': b'-- Up-to-date: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/srv/detail/set_threshold__type_support.c\n'}
+[17.424351] (rt1_assignment2) StdoutLine: {'line': b'-- Up-to-date: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/srv/detail/get_avg_vel__type_support.c\n'}
+[17.424425] (rt1_assignment2) StdoutLine: {'line': b'-- Up-to-date: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/msg\n'}
+[17.424548] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[17.424604] (rt1_assignment2) StdoutLine: {'line': b'-- Up-to-date: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/msg/detail\n'}
+[17.424655] (rt1_assignment2) StdoutLine: {'line': b'-- Up-to-date: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/msg/detail/info__type_support.c\n'}
+[17.424712] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/msg/detail/info__rosidl_typesupport_introspection_c.h\n'}
+[17.424768] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/lib/librt1_assignment2__rosidl_typesupport_introspection_c.so\n'}
+[17.424824] (rt1_assignment2) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/lib/librt1_assignment2__rosidl_typesupport_introspection_c.so" to ""\n'}
+[17.424883] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/lib/librt1_assignment2__rosidl_typesupport_c.so\n'}
+[17.424970] (rt1_assignment2) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/lib/librt1_assignment2__rosidl_typesupport_c.so" to ""\n'}
+[17.425044] (rt1_assignment2) StdoutLine: {'line': b'-- Up-to-date: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2\n'}
+[17.425125] (rt1_assignment2) StdoutLine: {'line': b'-- Up-to-date: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/srv\n'}
+[17.425182] (rt1_assignment2) StdoutLine: {'line': b'-- Up-to-date: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/srv/detail\n'}
+[17.425240] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/srv/detail/set_threshold__rosidl_typesupport_introspection_cpp.hpp\n'}
+[17.425313] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/srv/detail/set_threshold__type_support.cpp\n'}
+[17.425366] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/srv/detail/get_avg_vel__type_support.cpp\n'}
+[17.425418] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/srv/detail/get_avg_vel__rosidl_typesupport_introspection_cpp.hpp\n'}
+[17.425471] (rt1_assignment2) StdoutLine: {'line': b'-- Up-to-date: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/msg\n'}
+[17.425522] (rt1_assignment2) StdoutLine: {'line': b'-- Up-to-date: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/msg/detail\n'}
+[17.425576] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/msg/detail/info__rosidl_typesupport_introspection_cpp.hpp\n'}
+[17.425632] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/include/rt1_assignment2/rt1_assignment2/msg/detail/info__type_support.cpp\n'}
+[17.425688] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/lib/librt1_assignment2__rosidl_typesupport_introspection_cpp.so\n'}
+[17.425764] (rt1_assignment2) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/lib/librt1_assignment2__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[17.425824] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/lib/librt1_assignment2__rosidl_typesupport_cpp.so\n'}
+[17.425893] (rt1_assignment2) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/lib/librt1_assignment2__rosidl_typesupport_cpp.so" to ""\n'}
+[17.425961] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/share/rt1_assignment2/environment/pythonpath.sh\n'}
+[17.426028] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/share/rt1_assignment2/environment/pythonpath.dsv\n'}
+[17.426100] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/lib/python3.12/site-packages/rt1_assignment2-0.0.0-py3.12.egg-info\n'}
+[17.426165] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/lib/python3.12/site-packages/rt1_assignment2-0.0.0-py3.12.egg-info/PKG-INFO\n'}
+[17.426240] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/lib/python3.12/site-packages/rt1_assignment2-0.0.0-py3.12.egg-info/top_level.txt\n'}
+[17.426297] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/lib/python3.12/site-packages/rt1_assignment2-0.0.0-py3.12.egg-info/SOURCES.txt\n'}
+[17.426372] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/lib/python3.12/site-packages/rt1_assignment2-0.0.0-py3.12.egg-info/dependency_links.txt\n'}
+[17.426438] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/lib/python3.12/site-packages/rt1_assignment2\n'}
+[17.426490] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/lib/python3.12/site-packages/rt1_assignment2/rt1_assignment2_s__rosidl_typesupport_fastrtps_c.so\n'}
+[17.426567] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/lib/python3.12/site-packages/rt1_assignment2/_rt1_assignment2_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[17.426619] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/lib/python3.12/site-packages/rt1_assignment2/rt1_assignment2_s__rosidl_typesupport_introspection_c.so\n'}
+[17.426698] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/lib/python3.12/site-packages/rt1_assignment2/__init__.py\n'}
+[17.426752] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/lib/python3.12/site-packages/rt1_assignment2/_rt1_assignment2_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[17.426818] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/lib/python3.12/site-packages/rt1_assignment2/rt1_assignment2_s__rosidl_typesupport_c.so\n'}
+[17.426898] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/lib/python3.12/site-packages/rt1_assignment2/srv\n'}
+[17.426957] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/lib/python3.12/site-packages/rt1_assignment2/srv/__init__.py\n'}
+[17.427031] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/lib/python3.12/site-packages/rt1_assignment2/srv/_get_avg_vel.py\n'}
+[17.427092] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/lib/python3.12/site-packages/rt1_assignment2/srv/_set_threshold.py\n'}
+[17.427165] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/lib/python3.12/site-packages/rt1_assignment2/srv/_set_threshold_s.c\n'}
+[17.427222] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/lib/python3.12/site-packages/rt1_assignment2/srv/_get_avg_vel_s.c\n'}
+[17.427294] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/lib/python3.12/site-packages/rt1_assignment2/_rt1_assignment2_s.ep.rosidl_typesupport_c.c\n'}
+[17.427355] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/lib/python3.12/site-packages/rt1_assignment2/msg\n'}
+[17.427408] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/lib/python3.12/site-packages/rt1_assignment2/msg/__init__.py\n'}
+[17.427480] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/lib/python3.12/site-packages/rt1_assignment2/msg/_info_s.c\n'}
+[17.427534] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/lib/python3.12/site-packages/rt1_assignment2/msg/_info.py\n'}
+[17.478266] (-) TimerEvent: {}
+[17.558836] (rt1_assignment2) StdoutLine: {'line': b"Listing '/home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/lib/python3.12/site-packages/rt1_assignment2'...\n"}
+[17.559360] (rt1_assignment2) StdoutLine: {'line': b"Compiling '/home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/lib/python3.12/site-packages/rt1_assignment2/__init__.py'...\n"}
+[17.559575] (rt1_assignment2) StdoutLine: {'line': b"Listing '/home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/lib/python3.12/site-packages/rt1_assignment2/msg'...\n"}
+[17.559769] (rt1_assignment2) StdoutLine: {'line': b"Compiling '/home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/lib/python3.12/site-packages/rt1_assignment2/msg/__init__.py'...\n"}
+[17.559946] (rt1_assignment2) StdoutLine: {'line': b"Compiling '/home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/lib/python3.12/site-packages/rt1_assignment2/msg/_info.py'...\n"}
+[17.560132] (rt1_assignment2) StdoutLine: {'line': b"Listing '/home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/lib/python3.12/site-packages/rt1_assignment2/srv'...\n"}
+[17.560300] (rt1_assignment2) StdoutLine: {'line': b"Compiling '/home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/lib/python3.12/site-packages/rt1_assignment2/srv/__init__.py'...\n"}
+[17.560469] (rt1_assignment2) StdoutLine: {'line': b"Compiling '/home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/lib/python3.12/site-packages/rt1_assignment2/srv/_get_avg_vel.py'...\n"}
+[17.560658] (rt1_assignment2) StdoutLine: {'line': b"Compiling '/home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/lib/python3.12/site-packages/rt1_assignment2/srv/_set_threshold.py'...\n"}
+[17.574424] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/lib/python3.12/site-packages/rt1_assignment2/rt1_assignment2_s__rosidl_typesupport_fastrtps_c.so\n'}
+[17.575338] (rt1_assignment2) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/lib/python3.12/site-packages/rt1_assignment2/rt1_assignment2_s__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[17.575923] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/lib/python3.12/site-packages/rt1_assignment2/rt1_assignment2_s__rosidl_typesupport_introspection_c.so\n'}
+[17.576423] (rt1_assignment2) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/lib/python3.12/site-packages/rt1_assignment2/rt1_assignment2_s__rosidl_typesupport_introspection_c.so" to ""\n'}
+[17.576944] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/lib/python3.12/site-packages/rt1_assignment2/rt1_assignment2_s__rosidl_typesupport_c.so\n'}
+[17.577580] (rt1_assignment2) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/lib/python3.12/site-packages/rt1_assignment2/rt1_assignment2_s__rosidl_typesupport_c.so" to ""\n'}
+[17.577975] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/lib/librt1_assignment2__rosidl_generator_py.so\n'}
+[17.578399] (rt1_assignment2) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/lib/librt1_assignment2__rosidl_generator_py.so" to ""\n'}
+[17.578604] (-) TimerEvent: {}
+[17.578883] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/share/rt1_assignment2/msg/Info.idl\n'}
+[17.579218] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/share/rt1_assignment2/srv/SetThreshold.idl\n'}
+[17.579444] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/share/rt1_assignment2/srv/GetAvgVel.idl\n'}
+[17.579627] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/share/rt1_assignment2/msg/Info.msg\n'}
+[17.579801] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/share/rt1_assignment2/srv/SetThreshold.srv\n'}
+[17.580012] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/share/rt1_assignment2/srv/GetAvgVel.srv\n'}
+[17.580221] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/share/ament_index/resource_index/package_run_dependencies/rt1_assignment2\n'}
+[17.580394] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/share/ament_index/resource_index/parent_prefix_path/rt1_assignment2\n'}
+[17.580623] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/share/rt1_assignment2/environment/ament_prefix_path.sh\n'}
+[17.580805] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/share/rt1_assignment2/environment/ament_prefix_path.dsv\n'}
+[17.581055] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/share/rt1_assignment2/environment/path.sh\n'}
+[17.581270] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/share/rt1_assignment2/environment/path.dsv\n'}
+[17.581523] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/share/rt1_assignment2/local_setup.bash\n'}
+[17.581709] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/share/rt1_assignment2/local_setup.sh\n'}
+[17.582042] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/share/rt1_assignment2/local_setup.zsh\n'}
+[17.582338] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/share/rt1_assignment2/local_setup.dsv\n'}
+[17.582633] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/share/rt1_assignment2/package.dsv\n'}
+[17.582884] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/share/ament_index/resource_index/packages/rt1_assignment2\n'}
+[17.583147] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/share/rt1_assignment2/cmake/export_rt1_assignment2__rosidl_generator_cExport.cmake\n'}
+[17.583342] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/share/rt1_assignment2/cmake/export_rt1_assignment2__rosidl_generator_cExport-noconfig.cmake\n'}
+[17.583579] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/share/rt1_assignment2/cmake/export_rt1_assignment2__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[17.583807] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/share/rt1_assignment2/cmake/export_rt1_assignment2__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[17.584009] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/share/rt1_assignment2/cmake/export_rt1_assignment2__rosidl_generator_cppExport.cmake\n'}
+[17.584225] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/share/rt1_assignment2/cmake/export_rt1_assignment2__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[17.584435] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/share/rt1_assignment2/cmake/export_rt1_assignment2__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[17.584694] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/share/rt1_assignment2/cmake/rt1_assignment2__rosidl_typesupport_introspection_cExport.cmake\n'}
+[17.584929] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/share/rt1_assignment2/cmake/rt1_assignment2__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[17.585210] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/share/rt1_assignment2/cmake/rt1_assignment2__rosidl_typesupport_cExport.cmake\n'}
+[17.585441] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/share/rt1_assignment2/cmake/rt1_assignment2__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[17.585672] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/share/rt1_assignment2/cmake/rt1_assignment2__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[17.585886] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/share/rt1_assignment2/cmake/rt1_assignment2__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[17.586137] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/share/rt1_assignment2/cmake/rt1_assignment2__rosidl_typesupport_cppExport.cmake\n'}
+[17.586344] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/share/rt1_assignment2/cmake/rt1_assignment2__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[17.586578] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/share/rt1_assignment2/cmake/export_rt1_assignment2__rosidl_generator_pyExport.cmake\n'}
+[17.586786] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/share/rt1_assignment2/cmake/export_rt1_assignment2__rosidl_generator_pyExport-noconfig.cmake\n'}
+[17.586999] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/share/rt1_assignment2/cmake/rosidl_cmake-extras.cmake\n'}
+[17.587223] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/share/rt1_assignment2/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[17.587436] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/share/rt1_assignment2/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[17.587645] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/share/rt1_assignment2/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[17.587862] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/share/rt1_assignment2/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[17.588088] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/share/rt1_assignment2/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[17.588308] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/share/rt1_assignment2/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[17.588523] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/share/rt1_assignment2/cmake/rt1_assignment2Config.cmake\n'}
+[17.588714] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/share/rt1_assignment2/cmake/rt1_assignment2Config-version.cmake\n'}
+[17.588898] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/share/rt1_assignment2/package.xml\n'}
+[17.589284] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/lib/rt1_assignment2/safety_controller\n'}
+[17.601405] (rt1_assignment2) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/lib/rt1_assignment2/safety_controller" to ""\n'}
+[17.601984] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/lib/rt1_assignment2/user_interface\n'}
+[17.602326] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/share/rt1_assignment2//launch\n'}
+[17.602615] (rt1_assignment2) StdoutLine: {'line': b'-- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/install/rt1_assignment2/share/rt1_assignment2//launch/assignment2.launch.py\n'}
+[17.606298] (rt1_assignment2) CommandEnded: {'returncode': 0}
+[17.631713] (rt1_assignment2) JobEnded: {'identifier': 'rt1_assignment2', 'rc': 0}
+[17.632753] (-) EventReactorShutdown: {}

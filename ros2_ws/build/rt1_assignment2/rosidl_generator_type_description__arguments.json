@@ -1,0 +1,16 @@
+{
+  "package_name": "rt1_assignment2",
+  "output_dir": "/home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/build/rt1_assignment2/rosidl_generator_type_description/rt1_assignment2",
+  "idl_tuples": [
+    "/home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/build/rt1_assignment2/rosidl_adapter/rt1_assignment2:msg/Info.idl",
+    "/home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/build/rt1_assignment2/rosidl_adapter/rt1_assignment2:srv/SetThreshold.idl",
+    "/home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/build/rt1_assignment2/rosidl_adapter/rt1_assignment2:srv/GetAvgVel.idl"
+  ],
+  "include_paths": [
+    "std_msgs:/opt/ros/jazzy/share/std_msgs",
+    "builtin_interfaces:/opt/ros/jazzy/share/builtin_interfaces",
+    "sensor_msgs:/opt/ros/jazzy/share/sensor_msgs",
+    "geometry_msgs:/opt/ros/jazzy/share/geometry_msgs",
+    "service_msgs:/opt/ros/jazzy/share/service_msgs"
+  ]
+}
