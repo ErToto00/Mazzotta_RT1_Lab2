@@ -1,0 +1,67 @@
+[0.011s] Invoking command in '/home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/build/bme_gazebo_sensors': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/src/bme_gazebo_sensors -DCMAKE_INSTALL_PREFIX=/home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/install/bme_gazebo_sensors
+[0.233s] -- The C compiler identification is GNU 13.3.0
+[0.445s] -- The CXX compiler identification is GNU 13.3.0
+[0.499s] -- Detecting C compiler ABI info
+[0.762s] -- Detecting C compiler ABI info - done
+[0.790s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.797s] -- Detecting C compile features
+[0.799s] -- Detecting C compile features - done
+[0.827s] -- Detecting CXX compiler ABI info
+[1.113s] -- Detecting CXX compiler ABI info - done
+[1.144s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.145s] -- Detecting CXX compile features
+[1.146s] -- Detecting CXX compile features - done
+[1.158s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[1.576s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.845s] -- Found ament_lint_auto: 0.17.3 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[2.089s] -- Added test 'flake8' to check Python code syntax and style conventions
+[2.089s] -- Configured 'flake8' exclude dirs and/or files: 
+[2.092s] -- Added test 'lint_cmake' to check CMake code style
+[2.095s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[2.104s] -- Added test 'xmllint' to check XML markup files
+[2.108s] -- Configuring done (2.1s)
+[2.112s] -- Generating done (0.0s)
+[2.116s] -- Build files have been written to: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/build/bme_gazebo_sensors
+[2.124s] Invoked command in '/home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/build/bme_gazebo_sensors' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/src/bme_gazebo_sensors -DCMAKE_INSTALL_PREFIX=/home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/install/bme_gazebo_sensors
+[2.128s] Invoking command in '/home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/build/bme_gazebo_sensors': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/build/bme_gazebo_sensors -- -j32 -l32
+[2.241s] Invoked command in '/home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/build/bme_gazebo_sensors' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/build/bme_gazebo_sensors -- -j32 -l32
+[2.267s] Invoking command in '/home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/build/bme_gazebo_sensors': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/build/bme_gazebo_sensors
+[2.290s] -- Install configuration: ""
+[2.291s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/install/bme_gazebo_sensors/share/bme_gazebo_sensors/launch
+[2.291s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/install/bme_gazebo_sensors/share/bme_gazebo_sensors/launch/world.launch.py
+[2.292s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/install/bme_gazebo_sensors/share/bme_gazebo_sensors/launch/spawn_robot.launch.py
+[2.292s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/install/bme_gazebo_sensors/share/bme_gazebo_sensors/worlds
+[2.292s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/install/bme_gazebo_sensors/share/bme_gazebo_sensors/worlds/my_world.sdf
+[2.292s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/install/bme_gazebo_sensors/share/bme_gazebo_sensors/worlds/my.sdf
+[2.293s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/install/bme_gazebo_sensors/share/bme_gazebo_sensors/worlds/world.sdf
+[2.294s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/install/bme_gazebo_sensors/share/bme_gazebo_sensors/worlds/home.sdf
+[2.294s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/install/bme_gazebo_sensors/share/bme_gazebo_sensors/rviz
+[2.295s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/install/bme_gazebo_sensors/share/bme_gazebo_sensors/rviz/rviz.rviz
+[2.295s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/install/bme_gazebo_sensors/share/bme_gazebo_sensors/rviz/gps.rviz
+[2.296s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/install/bme_gazebo_sensors/share/bme_gazebo_sensors/rviz/urdf.rviz
+[2.296s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/install/bme_gazebo_sensors/share/bme_gazebo_sensors/urdf
+[2.296s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/install/bme_gazebo_sensors/share/bme_gazebo_sensors/urdf/materials.xacro
+[2.296s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/install/bme_gazebo_sensors/share/bme_gazebo_sensors/urdf/mogi_bot.gazebo
+[2.297s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/install/bme_gazebo_sensors/share/bme_gazebo_sensors/urdf/mogi_bot.urdf
+[2.297s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/install/bme_gazebo_sensors/share/bme_gazebo_sensors/meshes
+[2.297s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/install/bme_gazebo_sensors/share/bme_gazebo_sensors/meshes/wheel.dae
+[2.298s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/install/bme_gazebo_sensors/share/bme_gazebo_sensors/meshes/mogi_bot.dae
+[2.298s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/install/bme_gazebo_sensors/share/bme_gazebo_sensors/meshes/lidar.dae
+[2.298s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/install/bme_gazebo_sensors/share/bme_gazebo_sensors/config
+[2.298s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/install/bme_gazebo_sensors/share/bme_gazebo_sensors/config/ekf.yaml
+[2.299s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/install/bme_gazebo_sensors/share/ament_index/resource_index/package_run_dependencies/bme_gazebo_sensors
+[2.299s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/install/bme_gazebo_sensors/share/ament_index/resource_index/parent_prefix_path/bme_gazebo_sensors
+[2.299s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/install/bme_gazebo_sensors/share/bme_gazebo_sensors/environment/ament_prefix_path.sh
+[2.300s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/install/bme_gazebo_sensors/share/bme_gazebo_sensors/environment/ament_prefix_path.dsv
+[2.300s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/install/bme_gazebo_sensors/share/bme_gazebo_sensors/environment/path.sh
+[2.300s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/install/bme_gazebo_sensors/share/bme_gazebo_sensors/environment/path.dsv
+[2.300s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/install/bme_gazebo_sensors/share/bme_gazebo_sensors/local_setup.bash
+[2.301s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/install/bme_gazebo_sensors/share/bme_gazebo_sensors/local_setup.sh
+[2.301s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/install/bme_gazebo_sensors/share/bme_gazebo_sensors/local_setup.zsh
+[2.301s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/install/bme_gazebo_sensors/share/bme_gazebo_sensors/local_setup.dsv
+[2.301s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/install/bme_gazebo_sensors/share/bme_gazebo_sensors/package.dsv
+[2.301s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/install/bme_gazebo_sensors/share/ament_index/resource_index/packages/bme_gazebo_sensors
+[2.302s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/install/bme_gazebo_sensors/share/bme_gazebo_sensors/cmake/bme_gazebo_sensorsConfig.cmake
+[2.302s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/install/bme_gazebo_sensors/share/bme_gazebo_sensors/cmake/bme_gazebo_sensorsConfig-version.cmake
+[2.302s] -- Installing: /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/install/bme_gazebo_sensors/share/bme_gazebo_sensors/package.xml
+[2.307s] Invoked command in '/home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/build/bme_gazebo_sensors' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/build/bme_gazebo_sensors

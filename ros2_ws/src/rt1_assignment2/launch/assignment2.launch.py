@@ -1,5 +1,5 @@
 from launch import LaunchDescription
-from launch.actions import IncludeLaunchDescription
+from launch.actions import IncludeLaunchDescription, Shutdown
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 from launch_ros.actions import Node
 from ament_index_python.packages import get_package_share_directory
@@ -20,8 +20,9 @@ def generate_launch_description():
             package='rt1_assignment2',
             executable='user_interface',
             name='user_interface',
-            prefix='gnome-terminal --', # Using gnome-terminal based on system check
-            output='screen'
+            prefix='gnome-terminal --wait --', # Using gnome-terminal based on system check
+            output='screen',
+            on_exit=[Shutdown()]
         ),
         
         # Teleop Twist Keyboard - Needs a new terminal for input
@@ -29,7 +30,7 @@ def generate_launch_description():
             package='teleop_twist_keyboard',
             executable='teleop_twist_keyboard',
             name='teleop',
-            prefix='gnome-terminal --', # Using gnome-terminal
+            prefix='gnome-terminal --wait --', # Using gnome-terminal based on system check
             remappings=[('/cmd_vel', '/cmd_vel_in')],
             output='screen'
         ),

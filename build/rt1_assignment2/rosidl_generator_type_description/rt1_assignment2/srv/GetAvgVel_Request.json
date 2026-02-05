@@ -1,0 +1,26 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "rt1_assignment2/srv/GetAvgVel_Request",
+      "fields": [
+        {
+          "name": "structure_needs_at_least_one_member",
+          "type": {
+            "type_id": 3,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "rt1_assignment2/srv/GetAvgVel_Request",
+      "hash_string": "RIHS01_254e05ec2bb62083b307f18bc61b8ce7815276ca9897fd4a94912941d0dd3a90"
+    }
+  ]
+}

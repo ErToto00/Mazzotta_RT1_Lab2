@@ -49,15 +49,7 @@ private:
     
     int n_ranges = msg->ranges.size();
     int one_third = n_ranges / 3;
-    
-    // Find min dist dict
-    // Right (0 to 1/3), Front (1/3 to 2/3), Left (2/3 to 3/3) - typically in ROS, 0 is front or right depending on frame.
-    // Usually 0 is front? No, usually -pi/2 to pi/2 or similar. 0 is usually front.
-    // Let's assume standard Turtlebot3/ROS conventions: range[0] is often back or side?
-    // Let's just scan all and find the absolute minimum and its index to determine direction relative to robot frame.
-    // However, for simplicity without knowing the exact sensor config, I will use chunks.
-    // Actually, usually min_angle is Right, max_angle is Left, and center is Front.
-    
+        
     float min_dist = 100.0;
     std::string direction = "none";
     
@@ -100,17 +92,13 @@ private:
     
     // Safety Logic
     if (min_dist < threshold_) {
-        // Too close! Move back.
-        // If obstacle is in front, move back.
-        // If obstacle is left, maybe turn right? Requirement just says "moves the robot back".
-        // I'll interpret "move back" as reversing linear velocity.
+        // Too close! Move "back" by reversing the linear velocity.
         
         geometry_msgs::msg::Twist safety_cmd;
         safety_cmd.linear.x = -0.5; // Back up
         safety_cmd.angular.z = 0.0;
         cmd_pub_->publish(safety_cmd);
         
-        // Block user input in input_callback via flag if needed, but here we override.
         safety_active_ = true;
     } else {
         safety_active_ = false;
@@ -125,7 +113,7 @@ private:
     }
     vel_buffer_.push_back(*msg);
     
-    // If safety active, ignore input (scan_callback handles moving back)
+    // If safety active, ignore input
     // If safety NOT active, pass through
     if (!safety_active_) {
         cmd_pub_->publish(*msg);
@@ -147,7 +135,7 @@ private:
         response->avg_linear = 0.0;
         response->avg_angular = 0.0;
         return;
-    } // Removed accidental block chars
+    }
 
     float sum_linear = 0.0;
     float sum_angular = 0.0;
