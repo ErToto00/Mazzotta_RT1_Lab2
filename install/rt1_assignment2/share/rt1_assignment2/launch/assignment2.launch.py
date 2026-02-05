@@ -20,9 +20,8 @@ def generate_launch_description():
             package='rt1_assignment2',
             executable='user_interface',
             name='user_interface',
-            prefix='gnome-terminal --', # Using gnome-terminal based on system check
-            output='screen',
-            on_exit=[Shutdown()]
+            prefix="gnome-terminal -- bash -c ' \"$0\" \"$@\"; echo \"Process has exited. Press Enter to close...\"; read line' --", # Keep terminal open
+            output='screen'
         ),
         
         # Teleop Twist Keyboard - Needs a new terminal for input
@@ -30,7 +29,7 @@ def generate_launch_description():
             package='teleop_twist_keyboard',
             executable='teleop_twist_keyboard',
             name='teleop',
-            prefix='gnome-terminal --', # Using gnome-terminal
+            prefix="gnome-terminal -- bash -c ' \"$0\" \"$@\"; echo \"Process has exited. Press Enter to close...\"; read line' --", # Keep terminal open
             remappings=[('/cmd_vel', '/cmd_vel_in')],
             output='screen'
         ),

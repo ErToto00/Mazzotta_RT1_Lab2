@@ -25,8 +25,6 @@ class UserInterface(Node):
             print("Command: ", end='', flush=True)
             
             try:
-                # This input will block. To exit gracefully on ctrl-c while blocking here is hard,
-                # but 'q' handles the intentional exit.
                 cmd = sys.stdin.readline().strip()
             except RuntimeError:
                 break
@@ -39,15 +37,12 @@ class UserInterface(Node):
                     req = SetThreshold.Request()
                     req.input = val
                     
-                    if not self.set_thresh_client.wait_for_service(timeout_sec=1.0):
+                    if not self.set_thresh_client.wait_for_service(timeout_sec=5.0):
                         self.get_logger().warn('Service set_threshold not available')
+                        self.get_logger().info(f'Available services: {self.get_service_names_and_types()}')
                         continue
                         
                     future = self.set_thresh_client.call_async(req)
-                    # We can't easily wait on future here if we are not spinning in this thread.
-                    # But the main thread IS spinning.
-                    # We can block this thread until future is done roughly?
-                    # No, future needs spin to process. Main thread is spinning.
                     
                     # Simple wait loop
                     while not future.done():
@@ -64,8 +59,9 @@ class UserInterface(Node):
             elif cmd == 'a':
                 req = GetAvgVel.Request()
                 
-                if not self.get_avg_client.wait_for_service(timeout_sec=1.0):
+                if not self.get_avg_client.wait_for_service(timeout_sec=5.0):
                     self.get_logger().warn('Service get_avg_vel not available')
+                    self.get_logger().info(f'Available services: {self.get_service_names_and_types()}')
                     continue
                     
                 future = self.get_avg_client.call_async(req)
@@ -79,28 +75,27 @@ class UserInterface(Node):
             elif cmd == 'q':
                 self.running = False
                 print("Quitting...")
-                # We need to stop the main thread spin
-                # We can't easily signal shutdown from here except via rclpy.shutdown(), 
-                # but that might cause errors in the main loop if not careful.
-                # Actually main loop is rclpy.spin(node).
-                # We will let main know.
                 rclpy.shutdown()
                 break
+
+from rclpy.executors import MultiThreadedExecutor
 
 def main(args=None):
     rclpy.init(args=args)
     node = UserInterface()
     
+    executor = MultiThreadedExecutor()
+    executor.add_node(node)
+
     try:
-        rclpy.spin(node)
+        executor.spin()
     except (KeyboardInterrupt, rclpy.executors.ExternalShutdownException):
         pass
     finally:
         node.running = False
-        # node.menu_thread.join() # Might hang if stuck on readline
+        # node.menu_thread.join()
         node.destroy_node()
-        if rclpy.ok():
-            rclpy.shutdown()
+        rclpy.shutdown()
 
 if __name__ == '__main__':
     main()

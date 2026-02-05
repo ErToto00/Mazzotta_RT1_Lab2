@@ -9,8 +9,8 @@ from rt1_assignment2.srv import SetThreshold, GetAvgVel
 class UserInterface(Node):
     def __init__(self):
         super().__init__('user_interface')
-        self.set_thresh_client = self.create_client(SetThreshold, 'set_threshold')
-        self.get_avg_client = self.create_client(GetAvgVel, 'get_avg_vel')
+        self.set_thresh_client = self.create_client(SetThreshold, '/set_threshold')
+        self.get_avg_client = self.create_client(GetAvgVel, '/get_avg_vel')
         
         self.running = True
         self.menu_thread = threading.Thread(target=self.menu_loop)
@@ -37,8 +37,9 @@ class UserInterface(Node):
                     req = SetThreshold.Request()
                     req.input = val
                     
-                    if not self.set_thresh_client.wait_for_service(timeout_sec=1.0):
+                    if not self.set_thresh_client.wait_for_service(timeout_sec=5.0):
                         self.get_logger().warn('Service set_threshold not available')
+                        self.get_logger().info(f'Available services: {self.get_service_names_and_types()}')
                         continue
                         
                     future = self.set_thresh_client.call_async(req)
@@ -58,8 +59,9 @@ class UserInterface(Node):
             elif cmd == 'a':
                 req = GetAvgVel.Request()
                 
-                if not self.get_avg_client.wait_for_service(timeout_sec=1.0):
+                if not self.get_avg_client.wait_for_service(timeout_sec=5.0):
                     self.get_logger().warn('Service get_avg_vel not available')
+                    self.get_logger().info(f'Available services: {self.get_service_names_and_types()}')
                     continue
                     
                 future = self.get_avg_client.call_async(req)
@@ -76,20 +78,24 @@ class UserInterface(Node):
                 rclpy.shutdown()
                 break
 
+from rclpy.executors import MultiThreadedExecutor
+
 def main(args=None):
     rclpy.init(args=args)
     node = UserInterface()
     
+    executor = MultiThreadedExecutor()
+    executor.add_node(node)
+
     try:
-        rclpy.spin(node)
+        executor.spin()
     except (KeyboardInterrupt, rclpy.executors.ExternalShutdownException):
         pass
     finally:
         node.running = False
         # node.menu_thread.join()
         node.destroy_node()
-        if rclpy.ok():
-            rclpy.shutdown()
+        rclpy.shutdown()
 
 if __name__ == '__main__':
     main()

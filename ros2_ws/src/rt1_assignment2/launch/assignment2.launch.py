@@ -21,8 +21,7 @@ def generate_launch_description():
             executable='user_interface',
             name='user_interface',
             prefix='gnome-terminal --wait --', # Using gnome-terminal based on system check
-            output='screen',
-            on_exit=[Shutdown()]
+            output='screen'
         ),
         
         # Teleop Twist Keyboard - Needs a new terminal for input

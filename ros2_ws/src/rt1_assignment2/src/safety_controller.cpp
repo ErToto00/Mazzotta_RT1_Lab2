@@ -42,10 +42,6 @@ public:
 private:
   void scan_callback(const sensor_msgs::msg::LaserScan::SharedPtr msg)
   {
-    // 1. Analyze sectors
-    // Assuming 3 sectors: Left, Front, Right roughly.
-    // LaserScan ranges usually go from angle_min to angle_max.
-    // We'll divide range into 3 parts.
     
     int n_ranges = msg->ranges.size();
     int one_third = n_ranges / 3;
