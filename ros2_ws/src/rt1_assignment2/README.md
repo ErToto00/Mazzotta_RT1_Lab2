@@ -38,7 +38,7 @@ The project consists of two main nodes:
 To launch the entire simulation, including the robot, safety controller, user interface, and teleoperation node, run:
 
 ```bash
-ros2 launch rt1_assignment2 assignment2.launch.py
+ros2 launch rt1_assignment2 launcher.py
 ```
 
 This will open:

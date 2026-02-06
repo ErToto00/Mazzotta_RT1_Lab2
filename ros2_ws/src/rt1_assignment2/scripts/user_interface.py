@@ -18,7 +18,7 @@ class UserInterface(Node):
 
     def menu_loop(self):
         while self.running and rclpy.ok():
-            print("\n--- User Interface (Python) ---")
+            print("\n--- User Interface ---")
             print("t: Set Threshold")
             print("a: Get Average Velocity")
             print("q: Quit")
