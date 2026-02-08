@@ -30,10 +30,20 @@ CMakeFiles/safety_controller.dir/src/safety_controller.cpp.o: /home/ertoto/Docum
   /opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/duration.hpp \
   /opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp \
   /opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/time.hpp \
+  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.hpp \
+  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/point__traits.hpp \
+  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose__struct.hpp \
+  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose__traits.hpp \
+  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance__struct.hpp \
+  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance__traits.hpp \
+  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__struct.hpp \
+  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__traits.hpp \
   /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/twist__builder.hpp \
   /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/twist__struct.hpp \
   /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/twist__traits.hpp \
   /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/twist__type_support.hpp \
+  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/twist_with_covariance__struct.hpp \
+  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/twist_with_covariance__traits.hpp \
   /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/vector3__struct.hpp \
   /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/vector3__traits.hpp \
   /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
@@ -48,6 +58,12 @@ CMakeFiles/safety_controller.dir/src/safety_controller.cpp.o: /home/ertoto/Docum
   /opt/ros/jazzy/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/received_message_period.hpp \
   /opt/ros/jazzy/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/topic_statistics_collector.hpp \
   /opt/ros/jazzy/include/libstatistics_collector/libstatistics_collector/visibility_control.hpp \
+  /opt/ros/jazzy/include/nav_msgs/nav_msgs/msg/detail/odometry__builder.hpp \
+  /opt/ros/jazzy/include/nav_msgs/nav_msgs/msg/detail/odometry__struct.hpp \
+  /opt/ros/jazzy/include/nav_msgs/nav_msgs/msg/detail/odometry__traits.hpp \
+  /opt/ros/jazzy/include/nav_msgs/nav_msgs/msg/detail/odometry__type_support.hpp \
+  /opt/ros/jazzy/include/nav_msgs/nav_msgs/msg/odometry.hpp \
+  /opt/ros/jazzy/include/nav_msgs/nav_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
   /opt/ros/jazzy/include/rcl/rcl/allocator.h \
   /opt/ros/jazzy/include/rcl/rcl/arguments.h \
   /opt/ros/jazzy/include/rcl/rcl/client.h \
@@ -473,6 +489,7 @@ CMakeFiles/safety_controller.dir/src/safety_controller.cpp.o: /home/ertoto/Docum
   /usr/include/c++/13/bits/exception.h \
   /usr/include/c++/13/bits/exception_defines.h \
   /usr/include/c++/13/bits/exception_ptr.h \
+  /usr/include/c++/13/bits/fstream.tcc \
   /usr/include/c++/13/bits/functexcept.h \
   /usr/include/c++/13/bits/functional_hash.h \
   /usr/include/c++/13/bits/hash_bytes.h \
@@ -584,6 +601,7 @@ CMakeFiles/safety_controller.dir/src/safety_controller.cpp.o: /home/ertoto/Docum
   /usr/include/c++/13/ext/numeric_traits.h \
   /usr/include/c++/13/ext/string_conversions.h \
   /usr/include/c++/13/ext/type_traits.h \
+  /usr/include/c++/13/fstream \
   /usr/include/c++/13/functional \
   /usr/include/c++/13/future \
   /usr/include/c++/13/initializer_list \
@@ -762,8 +780,10 @@ CMakeFiles/safety_controller.dir/src/safety_controller.cpp.o: /home/ertoto/Docum
   /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
   /usr/include/x86_64-linux-gnu/bits/wordsize.h \
   /usr/include/x86_64-linux-gnu/c++/13/bits/atomic_word.h \
+  /usr/include/x86_64-linux-gnu/c++/13/bits/basic_file.h \
   /usr/include/x86_64-linux-gnu/c++/13/bits/c++allocator.h \
   /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
+  /usr/include/x86_64-linux-gnu/c++/13/bits/c++io.h \
   /usr/include/x86_64-linux-gnu/c++/13/bits/c++locale.h \
   /usr/include/x86_64-linux-gnu/c++/13/bits/cpu_defines.h \
   /usr/include/x86_64-linux-gnu/c++/13/bits/ctype_base.h \
@@ -812,6 +832,8 @@ CMakeFiles/safety_controller.dir/src/safety_controller.cpp.o: /home/ertoto/Docum
 /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h:
 
 /usr/include/x86_64-linux-gnu/c++/13/bits/cpu_defines.h:
+
+/usr/include/x86_64-linux-gnu/c++/13/bits/c++io.h:
 
 /usr/include/x86_64-linux-gnu/bits/wordsize.h:
 
@@ -1095,35 +1117,33 @@ CMakeFiles/safety_controller.dir/src/safety_controller.cpp.o: /home/ertoto/Docum
 
 /usr/include/c++/13/bits/string_view.tcc:
 
-/opt/ros/jazzy/include/rclcpp/rclcpp/detail/rmw_implementation_specific_subscription_payload.hpp:
+/usr/include/c++/13/bits/streambuf.tcc:
 
-/usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
+/usr/include/c++/13/bits/stream_iterator.h:
 
-/opt/ros/jazzy/include/rclcpp/rclcpp/node_interfaces/node_type_descriptions_interface.hpp:
+/usr/include/x86_64-linux-gnu/bits/getopt_core.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/sig_atomic_t.h:
+/usr/include/c++/13/bits/stl_vector.h:
 
-/opt/ros/jazzy/include/rclcpp/rclcpp/node_interfaces/node_topics_interface_traits.hpp:
+/usr/include/c++/13/bits/stl_tempbuf.h:
 
-/opt/ros/jazzy/include/rclcpp/rclcpp/node_interfaces/node_topics_interface.hpp:
+/usr/include/c++/13/bits/stl_set.h:
 
-/usr/include/x86_64-linux-gnu/bits/cpu-set.h:
+/usr/include/c++/13/bits/stl_relops.h:
 
-/opt/ros/jazzy/include/rclcpp/rclcpp/node_interfaces/node_timers_interface_traits.hpp:
+/usr/include/c++/13/bits/stl_raw_storage_iter.h:
 
-/opt/ros/jazzy/include/rclcpp/rclcpp/experimental/subscription_intra_process.hpp:
+/usr/include/c++/13/bits/stl_queue.h:
 
-/opt/ros/jazzy/include/rclcpp/rclcpp/node_interfaces/node_time_source_interface.hpp:
+/usr/include/c++/13/bits/stl_pair.h:
 
-/opt/ros/jazzy/include/rcutils/rcutils/sha256.h:
+/usr/include/c++/13/bits/stl_numeric.h:
 
-/opt/ros/jazzy/include/rclcpp/rclcpp/detail/rmw_implementation_specific_payload.hpp:
+/usr/include/c++/13/bits/stl_multimap.h:
 
-/opt/ros/jazzy/include/rclcpp/rclcpp/node_interfaces/node_parameters_interface.hpp:
+/usr/include/c++/13/debug/debug.h:
 
-/opt/ros/jazzy/include/rcl_yaml_param_parser/rcl_yaml_param_parser/parser.h:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/node_options.hpp:
+/usr/include/c++/13/bits/stl_list.h:
 
 /usr/include/c++/13/streambuf:
 
@@ -1153,12 +1173,6 @@ CMakeFiles/safety_controller.dir/src/safety_controller.cpp.o: /home/ertoto/Docum
 
 /usr/include/c++/13/bits/stl_deque.h:
 
-/usr/include/c++/13/codecvt:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/parameter_client.hpp:
-
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__type_support.hpp:
-
 /opt/ros/jazzy/include/rclcpp/rclcpp/node_interfaces/get_node_base_interface.hpp:
 
 /usr/include/c++/13/bits/istream.tcc:
@@ -1183,10 +1197,6 @@ CMakeFiles/safety_controller.dir/src/safety_controller.cpp.o: /home/ertoto/Docum
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/intra_process_setting.hpp:
 
-/usr/include/x86_64-linux-gnu/sys/types.h:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/generic_client.hpp:
-
 /opt/ros/jazzy/include/rclcpp/rclcpp/function_traits.hpp:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/executors/executor_entities_collection.hpp:
@@ -1208,8 +1218,6 @@ CMakeFiles/safety_controller.dir/src/safety_controller.cpp.o: /home/ertoto/Docum
 /opt/ros/jazzy/include/rclcpp/rclcpp/wait_set_policies/detail/synchronization_policy_common.hpp:
 
 /opt/ros/jazzy/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h:
-
-/usr/include/c++/13/bits/stl_tempbuf.h:
 
 /usr/include/c++/13/ostream:
 
@@ -1233,13 +1241,15 @@ CMakeFiles/safety_controller.dir/src/safety_controller.cpp.o: /home/ertoto/Docum
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/event.hpp:
 
+/usr/include/x86_64-linux-gnu/c++/13/bits/basic_file.h:
+
 /opt/ros/jazzy/include/rclcpp/rclcpp/expand_topic_or_service_name.hpp:
 
 /opt/ros/jazzy/include/libstatistics_collector/libstatistics_collector/moving_average_statistics/moving_average.hpp:
 
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__builder.hpp:
+/opt/ros/jazzy/include/rclcpp/rclcpp/detail/rmw_implementation_specific_subscription_payload.hpp:
 
-/usr/include/c++/13/bits/stl_queue.h:
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__builder.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/timex.h:
 
@@ -1255,9 +1265,9 @@ CMakeFiles/safety_controller.dir/src/safety_controller.cpp.o: /home/ertoto/Docum
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/detail/add_guard_condition_to_rcl_wait_set.hpp:
 
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__traits.hpp:
+/opt/ros/jazzy/include/nav_msgs/nav_msgs/msg/detail/odometry__type_support.hpp:
 
-/usr/include/c++/13/bits/stl_multimap.h:
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__traits.hpp:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/create_subscription.hpp:
 
@@ -1287,11 +1297,11 @@ rosidl_generator_cpp/rt1_assignment2/msg/detail/info__type_support.hpp:
 
 /opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/duration.hpp:
 
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/set_parameters_result.hpp:
+
 /usr/include/x86_64-linux-gnu/bits/sigaction.h:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/node_interfaces/node_parameters_interface_traits.hpp:
-
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/set_parameters_result.hpp:
 
 /opt/ros/jazzy/include/rcl/rcl/init_options.h:
 
@@ -1300,6 +1310,10 @@ rosidl_generator_cpp/rt1_assignment2/msg/detail/info__type_support.hpp:
 /usr/include/c++/13/csignal:
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/set_parameters_atomically.hpp:
+
+/opt/ros/jazzy/include/rcl_yaml_param_parser/rcl_yaml_param_parser/parser.h:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/node_interfaces/node_parameters_interface.hpp:
 
 /usr/include/c++/13/ext/string_conversions.h:
 
@@ -1319,12 +1333,6 @@ rosidl_generator_cpp/rt1_assignment2/msg/detail/info__type_support.hpp:
 
 /opt/ros/jazzy/include/rmw/rmw/qos_policy_kind.h:
 
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__traits.hpp:
-
-rosidl_generator_cpp/rt1_assignment2/msg/detail/info__traits.hpp:
-
-/opt/ros/jazzy/include/rcpputils/rcpputils/shared_library.hpp:
-
 /opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.hpp:
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__builder.hpp:
@@ -1335,47 +1343,55 @@ rosidl_generator_cpp/rt1_assignment2/msg/detail/info__traits.hpp:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/detail/cpp_callback_trampoline.hpp:
 
-/opt/ros/jazzy/include/rcl/rcl/guard_condition.h:
+/usr/include/c++/13/tr1/gamma.tcc:
 
-/opt/ros/jazzy/include/rcl/rcl/graph.h:
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__type_support.hpp:
 
-/usr/include/x86_64-linux-gnu/c++/13/bits/c++locale.h:
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__traits.hpp:
 
-/usr/include/c++/13/bits/ostream.tcc:
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__traits.hpp:
 
-/opt/ros/jazzy/include/rclcpp/rclcpp/intra_process_buffer_type.hpp:
+/opt/ros/jazzy/include/rcl/rcl/node_options.h:
 
-/usr/include/x86_64-linux-gnu/bits/environments.h:
+/opt/ros/jazzy/include/rcpputils/rcpputils/visibility_control.hpp:
 
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/parameter.hpp:
+/opt/ros/jazzy/include/rosidl_dynamic_typesupport/rosidl_dynamic_typesupport/visibility_control.h:
 
-/usr/include/x86_64-linux-gnu/bits/mathcalls.h:
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__type_support.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/endian.h:
+/opt/ros/jazzy/include/rclcpp/rclcpp/generic_subscription.hpp:
 
-/opt/ros/jazzy/include/service_msgs/service_msgs/msg/detail/service_event_info__traits.hpp:
+/usr/include/c++/13/bits/unordered_map.h:
 
-/opt/ros/jazzy/include/rcl/rcl/domain_id.h:
+/opt/ros/jazzy/include/rclcpp/rclcpp/experimental/buffers/buffer_implementation_base.hpp:
 
-/opt/ros/jazzy/include/rclcpp/rclcpp/executors/static_single_threaded_executor.hpp:
+/opt/ros/jazzy/include/rclcpp/rclcpp/any_service_callback.hpp:
 
-/opt/ros/jazzy/include/rcl/rcl/arguments.h:
+/opt/ros/jazzy/include/rcl_yaml_param_parser/rcl_yaml_param_parser/visibility_control.h:
 
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__struct.hpp:
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__struct.hpp:
 
-/opt/ros/jazzy/include/rmw/rmw/events_statuses/incompatible_qos.h:
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__type_support.hpp:
 
-/usr/include/c++/13/bits/stl_iterator.h:
+/usr/include/c++/13/codecvt:
 
-/usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
+/opt/ros/jazzy/include/rclcpp/rclcpp/parameter_client.hpp:
 
-/usr/include/c++/13/deque:
+/opt/ros/jazzy/include/rclcpp/rclcpp/network_flow_endpoint.hpp:
 
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__traits.hpp:
+/opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/laser_scan__builder.hpp:
 
-/opt/ros/jazzy/include/rclcpp/rclcpp/create_service.hpp:
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/describe_parameters.hpp:
 
-/opt/ros/jazzy/include/rcl/rcl/allocator.h:
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__builder.hpp:
+
+/usr/include/c++/13/bits/std_thread.h:
+
+/opt/ros/jazzy/include/rcl/rcl/event.h:
+
+/usr/include/c++/13/bits/shared_ptr_atomic.h:
 
 /opt/ros/jazzy/include/rcpputils/rcpputils/scope_exit.hpp:
 
@@ -1399,25 +1415,23 @@ rosidl_generator_cpp/rt1_assignment2/msg/detail/info__traits.hpp:
 
 /opt/ros/jazzy/include/rmw/rmw/events_statuses/offered_deadline_missed.h:
 
-/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/twist.hpp:
+/opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/service_type_support_struct.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/wint_t.h:
+/opt/ros/jazzy/include/libstatistics_collector/libstatistics_collector/collector/generate_statistics_message.hpp:
 
-/usr/include/signal.h:
+/opt/ros/jazzy/include/rclcpp/rclcpp/detail/rmw_implementation_specific_payload.hpp:
 
-/usr/include/c++/13/tr1/hypergeometric.tcc:
+/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance__traits.hpp:
 
-/opt/ros/jazzy/include/rclcpp/rclcpp/publisher_base.hpp:
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__type_support.hpp:
 
-/opt/ros/jazzy/include/rclcpp/rclcpp/publisher_options.hpp:
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/integer_range__traits.hpp:
 
-/opt/ros/jazzy/include/rclcpp/rclcpp/loaned_message.hpp:
+/opt/ros/jazzy/include/libstatistics_collector/libstatistics_collector/moving_average_statistics/types.hpp:
 
-/opt/ros/jazzy/include/rcl/rcl/visibility_control.h:
+/opt/ros/jazzy/include/rclcpp/rclcpp/waitable.hpp:
 
-/opt/ros/jazzy/include/rcl/rcl/event.h:
-
-/usr/include/c++/13/bits/shared_ptr_atomic.h:
+rosidl_generator_cpp/rt1_assignment2/srv/detail/get_avg_vel__traits.hpp:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/dynamic_typesupport/dynamic_message.hpp:
 
@@ -1445,15 +1459,57 @@ rosidl_generator_cpp/rt1_assignment2/msg/detail/info__traits.hpp:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/experimental/subscription_intra_process_buffer.hpp:
 
+/usr/include/c++/13/bits/stl_tree.h:
+
+/opt/ros/jazzy/include/rcl/rcl/publisher.h:
+
 /opt/ros/jazzy/include/rmw/rmw/events_statuses/liveliness_changed.h:
 
-/opt/ros/jazzy/include/rclcpp/rclcpp/network_flow_endpoint.hpp:
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__traits.hpp:
 
-/opt/ros/jazzy/include/rclcpp/rclcpp/experimental/ros_message_intra_process_buffer.hpp:
+rosidl_generator_cpp/rt1_assignment2/msg/detail/info__traits.hpp:
 
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__struct.hpp:
+/opt/ros/jazzy/include/rcpputils/rcpputils/shared_library.hpp:
 
-/opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/laser_scan__builder.hpp:
+/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/twist.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/types/wint_t.h:
+
+/usr/include/signal.h:
+
+/usr/include/c++/13/tr1/hypergeometric.tcc:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/publisher_base.hpp:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/publisher_options.hpp:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/intra_process_buffer_type.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/environments.h:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/parameter.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/mathcalls.h:
+
+/usr/include/x86_64-linux-gnu/bits/endian.h:
+
+/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/twist_with_covariance__struct.hpp:
+
+/opt/ros/jazzy/include/service_msgs/service_msgs/msg/detail/service_event_info__traits.hpp:
+
+/usr/include/c++/13/bits/streambuf_iterator.h:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__builder.hpp:
+
+/opt/ros/jazzy/include/rmw/rmw/events_statuses/incompatible_type.h:
+
+/opt/ros/jazzy/include/nav_msgs/nav_msgs/msg/detail/odometry__traits.hpp:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/contexts/default_context.hpp:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__struct.hpp:
+
+/opt/ros/jazzy/include/rcl/rcl/wait.h:
 
 rosidl_generator_cpp/rt1_assignment2/srv/detail/set_threshold__traits.hpp:
 
@@ -1477,25 +1533,23 @@ rosidl_generator_cpp/rt1_assignment2/msg/info.hpp:
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__builder.hpp:
 
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__type_support.hpp:
-
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/integer_range__traits.hpp:
-
 /opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/time__traits.hpp:
 
 rosidl_generator_cpp/rt1_assignment2/msg/detail/info__builder.hpp:
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__builder.hpp:
 
-/opt/ros/jazzy/include/libstatistics_collector/libstatistics_collector/moving_average_statistics/types.hpp:
+/usr/include/x86_64-linux-gnu/sys/types.h:
 
-rosidl_generator_cpp/rt1_assignment2/srv/detail/get_avg_vel__traits.hpp:
+/opt/ros/jazzy/include/rclcpp/rclcpp/generic_client.hpp:
 
-/opt/ros/jazzy/include/rclcpp/rclcpp/waitable.hpp:
+/usr/include/c++/13/initializer_list:
 
-/usr/include/c++/13/tr1/gamma.tcc:
+/opt/ros/jazzy/include/rcutils/rcutils/testing/fault_injection.h:
 
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__type_support.hpp:
+/usr/include/c++/13/bits/specfun.h:
+
+/opt/ros/jazzy/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/service_type_support.hpp:
 
 /usr/include/c++/13/pstl/execution_defs.h:
 
@@ -1525,6 +1579,10 @@ rosidl_generator_cpp/rt1_assignment2/srv/detail/get_avg_vel__type_support.hpp:
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__type_support.hpp:
 
+/usr/include/c++/13/bits/stl_multiset.h:
+
+/opt/ros/jazzy/include/rmw/rmw/init_options.h:
+
 /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/src/rt1_assignment2/src/safety_controller.cpp:
 
 /opt/ros/jazzy/include/type_description_interfaces/type_description_interfaces/srv/get_type_description.h:
@@ -1543,11 +1601,13 @@ rosidl_generator_cpp/rt1_assignment2/srv/detail/set_threshold__type_support.hpp:
 
 /usr/include/c++/13/bits/sstream.tcc:
 
+/opt/ros/jazzy/include/rclcpp/rclcpp/experimental/subscription_intra_process.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/cpu-set.h:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/node_interfaces/node_timers_interface_traits.hpp:
+
 /opt/ros/jazzy/include/rclcpp/rclcpp/message_info.hpp:
-
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__struct.hpp:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/detail/subscription_callback_type_helper.hpp:
 
 /opt/ros/jazzy/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/topic_statistics_collector.hpp:
 
@@ -1559,19 +1619,27 @@ rosidl_generator_cpp/rt1_assignment2/srv/get_avg_vel.hpp:
 
 /opt/ros/jazzy/include/type_description_interfaces/type_description_interfaces/msg/rosidl_generator_c__visibility_control.h:
 
-/opt/ros/jazzy/include/rclcpp/rclcpp/node_interfaces/node_clock_interface_traits.hpp:
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__builder.hpp:
 
-/opt/ros/jazzy/include/rcl/rcl/log_level.h:
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__builder.hpp:
 
-/opt/ros/jazzy/include/rcutils/rcutils/shared_library.h:
+/usr/include/c++/13/bits/range_access.h:
 
-/usr/include/c++/13/bits/cxxabi_forced.h:
+/opt/ros/jazzy/include/rcl/rcl/visibility_control.h:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/loaned_message.hpp:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/get_message_type_support_handle.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
 
 /opt/ros/jazzy/include/statistics_msgs/statistics_msgs/msg/detail/statistic_data_point__struct.hpp:
+
+/opt/ros/jazzy/include/nav_msgs/nav_msgs/msg/detail/odometry__struct.hpp:
+
+/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.hpp:
+
+/usr/include/c++/13/bits/locale_facets_nonio.h:
 
 /usr/include/c++/13/cstddef:
 
@@ -1607,11 +1675,63 @@ rosidl_generator_cpp/rt1_assignment2/srv/get_avg_vel.hpp:
 
 /usr/include/c++/13/bits/ostream_insert.h:
 
-/usr/include/c++/13/bits/stl_set.h:
-
 /opt/ros/jazzy/include/rclcpp/rclcpp/executor.hpp:
 
 /opt/ros/jazzy/include/rcl/rcl/types.h:
+
+/opt/ros/jazzy/include/rcutils/rcutils/types/hash_map.h:
+
+/usr/include/c++/13/bits/concept_check.h:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/create_service.hpp:
+
+/opt/ros/jazzy/include/rcl/rcl/allocator.h:
+
+/opt/ros/jazzy/include/nav_msgs/nav_msgs/msg/detail/odometry__builder.hpp:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/executors/static_single_threaded_executor.hpp:
+
+/usr/include/c++/13/fstream:
+
+/opt/ros/jazzy/include/rcl/rcl/arguments.h:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__struct.hpp:
+
+/opt/ros/jazzy/include/rmw/rmw/events_statuses/incompatible_qos.h:
+
+/usr/include/c++/13/bits/stl_iterator.h:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/detail/subscription_callback_type_helper.hpp:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__struct.hpp:
+
+/opt/ros/jazzy/include/rcl/rcl/domain_id.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
+
+/usr/include/c++/13/deque:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__traits.hpp:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__struct.hpp:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/experimental/ros_message_intra_process_buffer.hpp:
+
+/opt/ros/jazzy/include/rcl/rcl/graph.h:
+
+/usr/include/x86_64-linux-gnu/c++/13/bits/c++locale.h:
+
+/usr/include/c++/13/bits/ostream.tcc:
+
+/opt/ros/jazzy/include/rcl/rcl/guard_condition.h:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/node_interfaces/node_clock_interface_traits.hpp:
+
+/opt/ros/jazzy/include/rcl/rcl/log_level.h:
+
+/opt/ros/jazzy/include/rcutils/rcutils/shared_library.h:
+
+/usr/include/c++/13/bits/cxxabi_forced.h:
 
 /opt/ros/jazzy/include/rcpputils/rcpputils/thread_safety_annotations.hpp:
 
@@ -1635,12 +1755,6 @@ rosidl_generator_cpp/rt1_assignment2/srv/get_avg_vel.hpp:
 
 /opt/ros/jazzy/include/tracetools/tracetools/visibility_control.hpp:
 
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__builder.hpp:
-
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__builder.hpp:
-
-/usr/include/c++/13/bits/range_access.h:
-
 /usr/include/stdint.h:
 
 /opt/ros/jazzy/include/rcl/rcl/subscription.h:
@@ -1651,29 +1765,13 @@ rosidl_generator_cpp/rt1_assignment2/srv/get_avg_vel.hpp:
 
 /opt/ros/jazzy/include/rcl/rcl/timer.h:
 
-/opt/ros/jazzy/include/rcl/rcl/wait.h:
-
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__traits.hpp:
-
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__traits.hpp:
-
-/opt/ros/jazzy/include/rcl/rcl/node_options.h:
-
-/opt/ros/jazzy/include/rcpputils/rcpputils/visibility_control.hpp:
-
-/opt/ros/jazzy/include/rosidl_dynamic_typesupport/rosidl_dynamic_typesupport/visibility_control.h:
-
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__type_support.hpp:
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/floating_point_range__struct.hpp:
 
-/opt/ros/jazzy/include/rclcpp/rclcpp/parameter_event_handler.hpp:
-
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__traits.hpp:
 
-/opt/ros/jazzy/include/rclcpp/rclcpp/contexts/default_context.hpp:
-
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__struct.hpp:
+/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__traits.hpp:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/node_interfaces/node_logging_interface.hpp:
 
@@ -1683,13 +1781,17 @@ rosidl_generator_cpp/rt1_assignment2/srv/get_avg_vel.hpp:
 
 /opt/ros/jazzy/include/rosidl_dynamic_typesupport/rosidl_dynamic_typesupport/api/dynamic_data.h:
 
-/usr/include/x86_64-linux-gnu/bits/siginfo-consts.h:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/parameter_service.hpp:
-
 /opt/ros/jazzy/include/rclcpp/rclcpp/allocator/allocator_deleter.hpp:
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/list_parameters_result.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/getopt_posix.h:
+
+/usr/include/c++/13/locale:
+
+/usr/include/c++/13/bits/stl_map.h:
+
+/opt/ros/jazzy/include/type_description_interfaces/type_description_interfaces/srv/detail/get_type_description__struct.h:
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__type_support.hpp:
 
@@ -1699,6 +1801,36 @@ rosidl_generator_cpp/rt1_assignment2/srv/get_avg_vel.hpp:
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__builder.hpp:
 
+/opt/ros/jazzy/include/rclcpp/rclcpp/wait_set_policies/sequential_synchronization.hpp:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__struct.hpp:
+
+/usr/include/c++/13/iostream:
+
+/opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/laser_scan__traits.hpp:
+
+/usr/include/asm-generic/errno.h:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/future_return_code.hpp:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/clock.hpp:
+
+/opt/ros/jazzy/include/rcutils/rcutils/types.h:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__builder.hpp:
+
+/usr/include/x86_64-linux-gnu/sys/ucontext.h:
+
+/opt/ros/jazzy/include/rosidl_runtime_cpp/rosidl_runtime_cpp/service_type_support_decl.hpp:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/logging.hpp:
+
+/opt/ros/jazzy/include/rcl/rcl/macros.h:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__struct.hpp:
+
+/opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/action_type_support_struct.h:
+
 /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/type_description/type_description__struct.h:
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__builder.hpp:
@@ -1706,14 +1838,6 @@ rosidl_generator_cpp/rt1_assignment2/srv/get_avg_vel.hpp:
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__traits.hpp:
 
 /usr/include/c++/13/bits/basic_string.h:
-
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__builder.hpp:
-
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp:
-
-/opt/ros/jazzy/include/libstatistics_collector/libstatistics_collector/collector/generate_statistics_message.hpp:
-
-/opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/service_type_support_struct.h:
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__traits.hpp:
 
@@ -1743,7 +1867,11 @@ rosidl_generator_cpp/rt1_assignment2/srv/get_avg_vel.hpp:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/node.hpp:
 
-/opt/ros/jazzy/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/service_type_support.hpp:
+/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose__traits.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/type_adapter.hpp:
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__builder.hpp:
 
@@ -1751,65 +1879,41 @@ rosidl_generator_cpp/rt1_assignment2/srv/get_avg_vel.hpp:
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/parameter_event.hpp:
 
-/usr/include/c++/13/bits/stl_relops.h:
-
 rosidl_generator_cpp/rt1_assignment2/srv/detail/set_threshold__builder.hpp:
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/parameter_type.hpp:
 
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/describe_parameters.hpp:
+/opt/ros/jazzy/include/rclcpp/rclcpp/node_interfaces/node_time_source_interface.hpp:
 
-/opt/ros/jazzy/include/rclcpp/rclcpp/parameter_map.hpp:
-
-/usr/include/c++/13/bits/allocator.h:
-
-/usr/include/c++/13/bits/unordered_map.h:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/experimental/buffers/buffer_implementation_base.hpp:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/any_service_callback.hpp:
-
-/opt/ros/jazzy/include/rcl_yaml_param_parser/rcl_yaml_param_parser/visibility_control.h:
-
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__struct.hpp:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/generic_subscription.hpp:
-
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__type_support.hpp:
+/opt/ros/jazzy/include/rcutils/rcutils/sha256.h:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/node_interfaces/node_timers_interface.hpp:
 
 /opt/ros/jazzy/include/rmw/rmw/visibility_control.h:
 
-/opt/ros/jazzy/include/rclcpp/rclcpp/logging.hpp:
+/opt/ros/jazzy/include/rclcpp/rclcpp/node_interfaces/node_topics_interface.hpp:
 
-/opt/ros/jazzy/include/rcl/rcl/macros.h:
+/usr/include/x86_64-linux-gnu/bits/types/sig_atomic_t.h:
 
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__struct.hpp:
+/opt/ros/jazzy/include/rclcpp/rclcpp/node_interfaces/node_topics_interface_traits.hpp:
 
-/opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/action_type_support_struct.h:
+/usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
 
-/opt/ros/jazzy/include/rclcpp/rclcpp/future_return_code.hpp:
+/opt/ros/jazzy/include/nav_msgs/nav_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
 
-/opt/ros/jazzy/include/rclcpp/rclcpp/clock.hpp:
+/opt/ros/jazzy/include/rclcpp/rclcpp/node_interfaces/node_type_descriptions_interface.hpp:
 
-/opt/ros/jazzy/include/rcutils/rcutils/types.h:
+/opt/ros/jazzy/include/rclcpp/rclcpp/node_options.hpp:
 
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__builder.hpp:
+/opt/ros/jazzy/include/rclcpp/rclcpp/parameter_event_handler.hpp:
 
-/usr/include/x86_64-linux-gnu/sys/ucontext.h:
+/usr/include/c++/13/bits/allocator.h:
 
-/opt/ros/jazzy/include/rosidl_runtime_cpp/rosidl_runtime_cpp/service_type_support_decl.hpp:
+/opt/ros/jazzy/include/rclcpp/rclcpp/parameter_map.hpp:
 
-/opt/ros/jazzy/include/rclcpp/rclcpp/wait_set_policies/sequential_synchronization.hpp:
+/usr/include/x86_64-linux-gnu/bits/siginfo-consts.h:
 
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__struct.hpp:
-
-/usr/include/c++/13/iostream:
-
-/opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/laser_scan__traits.hpp:
-
-/usr/include/asm-generic/errno.h:
+/opt/ros/jazzy/include/rclcpp/rclcpp/parameter_service.hpp:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/parameter_value.hpp:
 
@@ -1853,6 +1957,8 @@ rosidl_generator_cpp/rt1_assignment2/srv/detail/get_avg_vel__struct.hpp:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/subscription_content_filter_options.hpp:
 
+/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose__struct.hpp:
+
 /opt/ros/jazzy/include/rclcpp/rclcpp/subscription_factory.hpp:
 
 /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/laser_scan__struct.hpp:
@@ -1877,10 +1983,6 @@ rosidl_generator_cpp/rt1_assignment2/msg/detail/info__struct.hpp:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/timer.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/type_adapter.hpp:
-
 /opt/ros/jazzy/include/rclcpp/rclcpp/client.hpp:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/type_support_decl.hpp:
@@ -1889,9 +1991,9 @@ rosidl_generator_cpp/rt1_assignment2/msg/detail/info__struct.hpp:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/utilities.hpp:
 
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__type_support.hpp:
-
 rosidl_generator_cpp/rt1_assignment2/srv/detail/get_avg_vel__builder.hpp:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__type_support.hpp:
 
 /usr/include/c++/13/bits/chrono.h:
 
@@ -1901,9 +2003,9 @@ rosidl_generator_cpp/rt1_assignment2/srv/detail/get_avg_vel__builder.hpp:
 
 /opt/ros/jazzy/include/rmw/rmw/names_and_types.h:
 
-/opt/ros/jazzy/include/rclcpp/rclcpp/detail/resolve_enable_topic_statistics.hpp:
-
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__struct.hpp:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/detail/resolve_enable_topic_statistics.hpp:
 
 /opt/ros/jazzy/include/rcutils/rcutils/types/char_array.h:
 
@@ -1947,23 +2049,11 @@ rosidl_generator_cpp/rt1_assignment2/srv/detail/get_avg_vel__builder.hpp:
 
 /opt/ros/jazzy/include/rcutils/rcutils/snprintf.h:
 
-/usr/include/c++/13/initializer_list:
-
-/opt/ros/jazzy/include/rcutils/rcutils/testing/fault_injection.h:
-
-/usr/include/c++/13/bits/specfun.h:
-
-/usr/include/c++/13/bits/streambuf.tcc:
-
 /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/vector3__traits.hpp:
 
 /opt/ros/jazzy/include/rcutils/rcutils/time.h:
 
 /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/laser_scan.hpp:
-
-/opt/ros/jazzy/include/rcutils/rcutils/types/hash_map.h:
-
-/usr/include/c++/13/bits/concept_check.h:
 
 /opt/ros/jazzy/include/rcutils/rcutils/macros.h:
 
@@ -1999,8 +2089,6 @@ rosidl_generator_cpp/rt1_assignment2/srv/detail/get_avg_vel__builder.hpp:
 
 /opt/ros/jazzy/include/rmw/rmw/events_statuses/events_statuses.h:
 
-/opt/ros/jazzy/include/rmw/rmw/events_statuses/incompatible_type.h:
-
 /opt/ros/jazzy/include/rmw/rmw/serialized_message.h:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/node_interfaces/node_graph_interface.hpp:
@@ -2010,6 +2098,12 @@ rosidl_generator_cpp/rt1_assignment2/srv/detail/get_avg_vel__builder.hpp:
 /usr/include/c++/13/bits/allocated_ptr.h:
 
 /opt/ros/jazzy/include/rmw/rmw/events_statuses/message_lost.h:
+
+/usr/include/c++/13/typeindex:
+
+/usr/include/c++/13/bits/stl_uninitialized.h:
+
+/opt/ros/jazzy/include/rmw/rmw/events_statuses/requested_deadline_missed.h:
 
 /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h:
 
@@ -2061,8 +2155,6 @@ rosidl_generator_cpp/rt1_assignment2/srv/detail/get_avg_vel__builder.hpp:
 
 /opt/ros/jazzy/include/rmw/rmw/subscription_content_filter_options.h:
 
-/usr/include/c++/13/bits/stl_pair.h:
-
 /usr/include/c++/13/ext/atomicity.h:
 
 /opt/ros/jazzy/include/rmw/rmw/time.h:
@@ -2109,11 +2201,15 @@ rosidl_generator_cpp/rt1_assignment2/srv/detail/get_avg_vel__builder.hpp:
 
 /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/message_initialization.h:
 
+/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/point__traits.hpp:
+
 /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
 
 /usr/include/c++/13/bits/basic_string.tcc:
+
+/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__struct.hpp:
 
 /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/string.h:
 
@@ -2173,10 +2269,6 @@ rosidl_generator_cpp/rt1_assignment2/srv/detail/get_avg_vel__builder.hpp:
 
 /usr/include/c++/13/bits/erase_if.h:
 
-/usr/include/c++/13/debug/debug.h:
-
-/usr/include/c++/13/bits/stl_list.h:
-
 /opt/ros/jazzy/include/statistics_msgs/statistics_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
 
 rosidl_generator_cpp/rt1_assignment2/srv/set_threshold.hpp:
@@ -2215,12 +2307,6 @@ rosidl_generator_cpp/rt1_assignment2/srv/set_threshold.hpp:
 
 /usr/include/c++/13/bits/new_allocator.h:
 
-/usr/include/c++/13/typeindex:
-
-/opt/ros/jazzy/include/rmw/rmw/events_statuses/requested_deadline_missed.h:
-
-/usr/include/c++/13/bits/stl_uninitialized.h:
-
 /opt/ros/jazzy/include/rcutils/rcutils/error_handling.h:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/publisher_factory.hpp:
@@ -2228,6 +2314,8 @@ rosidl_generator_cpp/rt1_assignment2/srv/set_threshold.hpp:
 /opt/ros/jazzy/include/type_description_interfaces/type_description_interfaces/msg/detail/type_source__struct.h:
 
 /opt/ros/jazzy/include/type_description_interfaces/type_description_interfaces/srv/detail/get_type_description__functions.h:
+
+/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/twist_with_covariance__traits.hpp:
 
 /usr/include/asm-generic/errno-base.h:
 
@@ -2242,6 +2330,8 @@ rosidl_generator_cpp/rt1_assignment2/srv/set_threshold.hpp:
 /usr/include/c++/13/array:
 
 /usr/include/c++/13/atomic:
+
+/opt/ros/jazzy/include/nav_msgs/nav_msgs/msg/odometry.hpp:
 
 /usr/include/c++/13/bits/align.h:
 
@@ -2259,10 +2349,6 @@ rosidl_generator_cpp/rt1_assignment2/srv/set_threshold.hpp:
 
 /usr/include/c++/13/bits/codecvt.h:
 
-/opt/ros/jazzy/include/rcl/rcl/publisher.h:
-
-/usr/include/c++/13/bits/stl_tree.h:
-
 /usr/include/c++/13/bits/deque.tcc:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/node_impl.hpp:
@@ -2276,6 +2362,10 @@ rosidl_generator_cpp/rt1_assignment2/srv/set_threshold.hpp:
 /usr/include/c++/13/bits/this_thread_sleep.h:
 
 /usr/include/c++/13/bits/exception_ptr.h:
+
+/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance__struct.hpp:
+
+/usr/include/c++/13/bits/fstream.tcc:
 
 /usr/include/c++/13/bits/functexcept.h:
 
@@ -2305,8 +2395,6 @@ rosidl_generator_cpp/rt1_assignment2/srv/set_threshold.hpp:
 
 /usr/include/c++/13/bits/locale_facets.h:
 
-/usr/include/c++/13/bits/locale_facets_nonio.h:
-
 /usr/include/c++/13/bits/localefwd.h:
 
 /usr/include/c++/13/pstl/glue_memory_defs.h:
@@ -2329,34 +2417,6 @@ rosidl_generator_cpp/rt1_assignment2/srv/set_threshold.hpp:
 
 /usr/include/c++/13/bits/std_mutex.h:
 
-/usr/include/c++/13/bits/std_thread.h:
-
 /usr/include/c++/13/bits/stl_algo.h:
 
 /usr/include/c++/13/bits/stl_function.h:
-
-/usr/include/x86_64-linux-gnu/bits/getopt_posix.h:
-
-/usr/include/c++/13/locale:
-
-/opt/ros/jazzy/include/type_description_interfaces/type_description_interfaces/srv/detail/get_type_description__struct.h:
-
-/usr/include/c++/13/bits/stl_map.h:
-
-/opt/ros/jazzy/include/rmw/rmw/init_options.h:
-
-/usr/include/c++/13/bits/stl_multiset.h:
-
-/usr/include/c++/13/bits/stl_numeric.h:
-
-/usr/include/c++/13/bits/stl_raw_storage_iter.h:
-
-/usr/include/x86_64-linux-gnu/bits/getopt_core.h:
-
-/usr/include/c++/13/bits/stl_vector.h:
-
-/usr/include/c++/13/bits/stream_iterator.h:
-
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__builder.hpp:
-
-/usr/include/c++/13/bits/streambuf_iterator.h:

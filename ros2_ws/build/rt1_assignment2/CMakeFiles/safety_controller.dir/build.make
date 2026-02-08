@@ -98,6 +98,12 @@ safety_controller: /opt/ros/jazzy/lib/libsensor_msgs__rosidl_typesupport_fastrtp
 safety_controller: /opt/ros/jazzy/lib/libsensor_msgs__rosidl_typesupport_introspection_c.so
 safety_controller: /opt/ros/jazzy/lib/libsensor_msgs__rosidl_typesupport_introspection_cpp.so
 safety_controller: /opt/ros/jazzy/lib/libsensor_msgs__rosidl_generator_py.so
+safety_controller: /opt/ros/jazzy/lib/libnav_msgs__rosidl_typesupport_fastrtps_c.so
+safety_controller: /opt/ros/jazzy/lib/libnav_msgs__rosidl_typesupport_fastrtps_cpp.so
+safety_controller: /opt/ros/jazzy/lib/libnav_msgs__rosidl_typesupport_introspection_c.so
+safety_controller: /opt/ros/jazzy/lib/libnav_msgs__rosidl_typesupport_introspection_cpp.so
+safety_controller: /opt/ros/jazzy/lib/libnav_msgs__rosidl_typesupport_cpp.so
+safety_controller: /opt/ros/jazzy/lib/libnav_msgs__rosidl_generator_py.so
 safety_controller: librt1_assignment2__rosidl_typesupport_cpp.so
 safety_controller: /opt/ros/jazzy/lib/liblibstatistics_collector.so
 safety_controller: /opt/ros/jazzy/lib/librcl.so
@@ -137,6 +143,7 @@ safety_controller: /opt/ros/jazzy/lib/libstatistics_msgs__rosidl_typesupport_c.s
 safety_controller: /opt/ros/jazzy/lib/libstatistics_msgs__rosidl_generator_c.so
 safety_controller: /opt/ros/jazzy/lib/libtracetools.so
 safety_controller: /opt/ros/jazzy/lib/librcl_logging_interface.so
+safety_controller: /opt/ros/jazzy/lib/libsensor_msgs__rosidl_typesupport_c.so
 safety_controller: /opt/ros/jazzy/lib/libgeometry_msgs__rosidl_typesupport_fastrtps_c.so
 safety_controller: /opt/ros/jazzy/lib/libgeometry_msgs__rosidl_typesupport_introspection_c.so
 safety_controller: /opt/ros/jazzy/lib/libgeometry_msgs__rosidl_typesupport_fastrtps_cpp.so
@@ -147,9 +154,10 @@ safety_controller: /opt/ros/jazzy/lib/libstd_msgs__rosidl_typesupport_fastrtps_c
 safety_controller: /opt/ros/jazzy/lib/libstd_msgs__rosidl_typesupport_introspection_c.so
 safety_controller: /opt/ros/jazzy/lib/libstd_msgs__rosidl_typesupport_introspection_cpp.so
 safety_controller: /opt/ros/jazzy/lib/libstd_msgs__rosidl_generator_py.so
-safety_controller: /opt/ros/jazzy/lib/libsensor_msgs__rosidl_typesupport_c.so
+safety_controller: /opt/ros/jazzy/lib/libnav_msgs__rosidl_typesupport_c.so
 safety_controller: /opt/ros/jazzy/lib/libgeometry_msgs__rosidl_typesupport_c.so
 safety_controller: /opt/ros/jazzy/lib/libstd_msgs__rosidl_typesupport_c.so
+safety_controller: /opt/ros/jazzy/lib/libnav_msgs__rosidl_generator_c.so
 safety_controller: /opt/ros/jazzy/lib/libservice_msgs__rosidl_typesupport_fastrtps_c.so
 safety_controller: /opt/ros/jazzy/lib/libservice_msgs__rosidl_typesupport_fastrtps_cpp.so
 safety_controller: /opt/ros/jazzy/lib/libservice_msgs__rosidl_typesupport_introspection_c.so

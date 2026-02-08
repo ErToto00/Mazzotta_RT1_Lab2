@@ -1,0 +1,3 @@
+gmake[2]: *** [CMakeFiles/safety_controller.dir/build.make:76: CMakeFiles/safety_controller.dir/src/safety_controller.cpp.o] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:626: CMakeFiles/safety_controller.dir/all] Interrupt
+gmake: *** [Makefile:146: all] Interrupt

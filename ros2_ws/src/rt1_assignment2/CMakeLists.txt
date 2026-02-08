@@ -11,6 +11,7 @@ find_package(rclcpp REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(sensor_msgs REQUIRED)
+find_package(nav_msgs REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
@@ -30,7 +31,7 @@ endif()
 ament_package()
 
 add_executable(safety_controller src/safety_controller.cpp)
-ament_target_dependencies(safety_controller rclcpp std_msgs geometry_msgs sensor_msgs)
+ament_target_dependencies(safety_controller rclcpp std_msgs geometry_msgs sensor_msgs nav_msgs)
 rosidl_target_interfaces(safety_controller
   ${PROJECT_NAME} "rosidl_typesupport_cpp")
 

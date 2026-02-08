@@ -1,6 +1,6 @@
 import os
 from launch import LaunchDescription
-from launch.actions import DeclareLaunchArgument, IncludeLaunchDescription, TimerAction
+from launch.actions import DeclareLaunchArgument, IncludeLaunchDescription
 from launch.conditions import IfCondition
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 from launch.substitutions import LaunchConfiguration, PathJoinSubstitution, Command
@@ -12,12 +12,7 @@ def generate_launch_description():
     pkg_bme_gazebo_sensors = get_package_share_directory('bme_gazebo_sensors')
 
     gazebo_models_path, ignore_last_dir = os.path.split(pkg_bme_gazebo_sensors)
-    if "GZ_SIM_RESOURCE_PATH" in os.environ:
-        os.environ["GZ_SIM_RESOURCE_PATH"] += os.pathsep + gazebo_models_path
-    else:
-        os.environ["GZ_SIM_RESOURCE_PATH"] = gazebo_models_path
-        
-    print(f"DEBUG: GZ_SIM_RESOURCE_PATH={os.environ['GZ_SIM_RESOURCE_PATH']}")
+    os.environ["GZ_SIM_RESOURCE_PATH"] = os.pathsep + gazebo_models_path
 
     rviz_launch_arg = DeclareLaunchArgument(
         'rviz', default_value='true',
@@ -146,10 +141,7 @@ def generate_launch_description():
     launchDescriptionObject.add_action(sim_time_arg)
     launchDescriptionObject.add_action(world_launch)
     launchDescriptionObject.add_action(rviz_node)
-    launchDescriptionObject.add_action(TimerAction(
-        period=5.0,
-        actions=[spawn_urdf_node]
-    ))
+    launchDescriptionObject.add_action(spawn_urdf_node)
     launchDescriptionObject.add_action(gz_bridge_node)
     launchDescriptionObject.add_action(robot_state_publisher_node)
 

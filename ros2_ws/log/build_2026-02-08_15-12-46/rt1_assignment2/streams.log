@@ -1,0 +1,29 @@
+[0.007s] Invoking command in '/home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/build/rt1_assignment2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/build/rt1_assignment2 -- -j32 -l32
+[0.121s] [  1%] Built target rt1_assignment2__rosidl_generator_type_description
+[0.136s] [  1%] Built target ament_cmake_python_copy_rt1_assignment2
+[0.180s] [  3%] Built target rt1_assignment2__cpp
+[0.187s] [ 23%] Built target rt1_assignment2__rosidl_generator_c
+[0.266s] [ 32%] Built target rt1_assignment2__rosidl_typesupport_introspection_c
+[0.269s] [ 41%] Built target rt1_assignment2__rosidl_typesupport_c
+[0.269s] [ 50%] Built target rt1_assignment2__rosidl_typesupport_cpp
+[0.274s] [ 58%] Built target rt1_assignment2__rosidl_typesupport_fastrtps_c
+[0.276s] [ 67%] Built target rt1_assignment2__rosidl_typesupport_fastrtps_cpp
+[0.278s] [ 76%] Built target rt1_assignment2__rosidl_typesupport_introspection_cpp
+[0.331s] [ 76%] Built target rt1_assignment2
+[0.353s] [ 78%] Built target rt1_assignment2__py
+[0.363s] [ 80%] [32mBuilding CXX object CMakeFiles/safety_controller.dir/src/safety_controller.cpp.o[0m
+[0.371s] [ 87%] Built target rt1_assignment2__rosidl_generator_py
+[0.386s] [ 91%] Built target rt1_assignment2_s__rosidl_typesupport_c
+[0.387s] [ 94%] Built target rt1_assignment2_s__rosidl_typesupport_introspection_c
+[0.387s] [ 98%] Built target rt1_assignment2_s__rosidl_typesupport_fastrtps_c
+[0.400s] running egg_info
+[0.408s] writing rt1_assignment2.egg-info/PKG-INFO
+[0.408s] writing dependency_links to rt1_assignment2.egg-info/dependency_links.txt
+[0.408s] writing top-level names to rt1_assignment2.egg-info/top_level.txt
+[0.431s] reading manifest file 'rt1_assignment2.egg-info/SOURCES.txt'
+[0.431s] writing manifest file 'rt1_assignment2.egg-info/SOURCES.txt'
+[0.447s] [ 98%] Built target ament_cmake_python_build_rt1_assignment2_egg
+[3.391s] gmake[2]: *** [CMakeFiles/safety_controller.dir/build.make:76: CMakeFiles/safety_controller.dir/src/safety_controller.cpp.o] Interrupt
+[3.391s] gmake[1]: *** [CMakeFiles/Makefile2:626: CMakeFiles/safety_controller.dir/all] Interrupt
+[3.392s] gmake: *** [Makefile:146: all] Interrupt
+[3.409s] Invoked command in '/home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/build/rt1_assignment2' returned '-2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/build/rt1_assignment2 -- -j32 -l32

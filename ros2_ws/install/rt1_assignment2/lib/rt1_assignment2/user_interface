@@ -9,8 +9,8 @@ from rt1_assignment2.srv import SetThreshold, GetAvgVel
 class UserInterface(Node):
     def __init__(self):
         super().__init__('user_interface')
-        self.set_thresh_client = self.create_client(SetThreshold, 'set_threshold')
-        self.get_avg_client = self.create_client(GetAvgVel, 'get_avg_vel')
+        self.set_thresh_client = self.create_client(SetThreshold, '/set_threshold')
+        self.get_avg_client = self.create_client(GetAvgVel, '/get_avg_vel')
         
         self.running = True
         self.menu_thread = threading.Thread(target=self.menu_loop)
@@ -18,7 +18,7 @@ class UserInterface(Node):
 
     def menu_loop(self):
         while self.running and rclpy.ok():
-            print("\n--- User Interface (Python) ---")
+            print("\n--- User Interface ---")
             print("t: Set Threshold")
             print("a: Get Average Velocity")
             print("q: Quit")

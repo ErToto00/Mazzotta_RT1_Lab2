@@ -1,0 +1,251 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-ca1c3bb59394a111b90b.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19
+					]
+				},
+				{
+					"build" : "rt1_assignment2__py",
+					"jsonFile" : "directory-rt1_assignment2__py-0cbb0e0f449f590bfcda.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/build/rt1_assignment2/rt1_assignment2__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "rt1_assignment2",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_rt1_assignment2_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_rt1_assignment2_egg-b5b32734437fa391b03b.json",
+					"name" : "ament_cmake_python_build_rt1_assignment2_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_rt1_assignment2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_rt1_assignment2-c4b9d5fbaedd8e4e05d1.json",
+					"name" : "ament_cmake_python_copy_rt1_assignment2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rt1_assignment2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rt1_assignment2-6e9c1f6bc50dc701afc8.json",
+					"name" : "rt1_assignment2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rt1_assignment2__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rt1_assignment2__cpp-78e493c83176f5300e61.json",
+					"name" : "rt1_assignment2__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "rt1_assignment2__py::@2d4c7e465521fefc680d",
+					"jsonFile" : "target-rt1_assignment2__py-a62d7f14439462eaf99f.json",
+					"name" : "rt1_assignment2__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rt1_assignment2__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rt1_assignment2__rosidl_generator_c-17aca2fa7d53bccf0679.json",
+					"name" : "rt1_assignment2__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rt1_assignment2__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rt1_assignment2__rosidl_generator_py-e1d990ff63aa5c37fcd0.json",
+					"name" : "rt1_assignment2__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rt1_assignment2__rosidl_generator_type_description::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rt1_assignment2__rosidl_generator_type_description-a074c78d9131bbfffd2b.json",
+					"name" : "rt1_assignment2__rosidl_generator_type_description",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rt1_assignment2__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rt1_assignment2__rosidl_typesupport_c-4d97a37c5ec266a0c836.json",
+					"name" : "rt1_assignment2__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rt1_assignment2__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rt1_assignment2__rosidl_typesupport_cpp-fea24bd5629daae703a0.json",
+					"name" : "rt1_assignment2__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rt1_assignment2__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rt1_assignment2__rosidl_typesupport_fastrtps_c-780705bccc4ab8d9981e.json",
+					"name" : "rt1_assignment2__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rt1_assignment2__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rt1_assignment2__rosidl_typesupport_fastrtps_cpp-ab456086f3ce3e96eea4.json",
+					"name" : "rt1_assignment2__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rt1_assignment2__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rt1_assignment2__rosidl_typesupport_introspection_c-b65937df57e5ae17564b.json",
+					"name" : "rt1_assignment2__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rt1_assignment2__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rt1_assignment2__rosidl_typesupport_introspection_cpp-e9d321b940ba584449c0.json",
+					"name" : "rt1_assignment2__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rt1_assignment2_s__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rt1_assignment2_s__rosidl_typesupport_c-497a6ca314abcc50d94e.json",
+					"name" : "rt1_assignment2_s__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rt1_assignment2_s__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rt1_assignment2_s__rosidl_typesupport_fastrtps_c-35927d231dea8103bb10.json",
+					"name" : "rt1_assignment2_s__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rt1_assignment2_s__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rt1_assignment2_s__rosidl_typesupport_introspection_c-084c16cd00fe752a812f.json",
+					"name" : "rt1_assignment2_s__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rt1_assignment2_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rt1_assignment2_uninstall-6573b9f3974b1b2dffd1.json",
+					"name" : "rt1_assignment2_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "safety_controller::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-safety_controller-afcf6e8bd267ab5906ea.json",
+					"name" : "safety_controller",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-896980d0b1f45f364edc.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/build/rt1_assignment2",
+		"source" : "/home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/ros2_ws/src/rt1_assignment2"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}
