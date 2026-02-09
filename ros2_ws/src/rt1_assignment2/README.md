@@ -12,7 +12,6 @@ The project consists of two main nodes:
 
 *   ROS 2 (Jazzy)
 *   `bme_gazebo_sensors` (Simulation environment)
-*   `teleop_twist_keyboard` (Teleoperation node)
 
 ## Installation
 
@@ -44,7 +43,7 @@ ros2 launch rt1_assignment2 launcher.py
 This will open:
 *   **Gazebo**: The 3D simulation environment.
 *   **Main Terminal**: Displays logs from the `safety_controller` and simulation.
-*   **Teleop Terminal**: Allows you to control the robot using the keyboard (i, j, k, l, etc.). For the scope of this project, ignore the "Holonomic movement" section.
+*   **Input Controller Terminal**: Allows you to control the robot by entering linear and angular velocities. Positive linear velocity corresponds to a forward movement, while positive angular velocity corresponds to a clockwise rotation. The robot will move for 1 second based on these inputs.
 *   **User Interface Terminal**: Provides a menu to interact with the services.
 
 Alternatively, you can run the the **launch_project.sh** file in the root directory of the project.
@@ -58,8 +57,15 @@ The User Interface node runs in a separate terminal and offers the following com
 
 ## Nodes
 
+### `input_controller` (Python)
+A node that handles user input for controlling the robot.
+1.  **Input Logic**:
+    Asking the user for a linear and angular velocity. The robot will move for 1 second.
+2.  **Safety Monitoring**:
+    It subscribes to the `/info` topic. If the distance to an obstacle is less than the threshold, it prevents the robot from moving or stops it immediately. If a step is interrupted by an obstacle, the robot backtracks to its starting position.
+
 ### `safety_controller` (C++)
-A node that acts as a middleware between the teleop command and the robot.
+A node that acts as a middleware between the input controller and the robot.
 
 1.  **Safety Logic**: 
     If the robot approaches an obstacle closer than the set threshold (default 0.5m), the controller intervenes. Instead of just stopping, the robot will reverse to its last known safe position. Input from the user is ignored during this maneuver.
@@ -69,7 +75,7 @@ A node that acts as a middleware between the teleop command and the robot.
 
 *   **Subscribers**:
     *   `/scan` (`sensor_msgs/msg/LaserScan`): Reads laser data to detect obstacles.
-    *   `/cmd_vel_in` (`geometry_msgs/msg/Twist`): Receives commands from the `teleop_twist_keyboard` node. This node is launched as part of the system and acts as the "imported file" providing standard teleoperation capabilities without custom scripts.
+    *   `/cmd_vel_in` (`geometry_msgs/msg/Twist`): Receives commands from the `input_controller` node.
     *   `/odom` (`nav_msgs/msg/Odometry`): Monitoring robot position for logging and safety retraction.
 
 *   **Publishers**:
