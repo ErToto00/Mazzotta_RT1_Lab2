@@ -1,0 +1,150 @@
+#!/usr/bin/env python3
+import rclpy
+from rclpy.node import Node
+from geometry_msgs.msg import Twist
+from nav_msgs.msg import Odometry
+from rt1_assignment2.msg import Info
+import threading
+import sys
+import time
+import math
+
+class InputController(Node):
+    def __init__(self):
+        super().__init__('input_controller')
+        # Publisher to /cmd_vel (will be remapped in launch file)
+        self.publisher_ = self.create_publisher(Twist, '/cmd_vel', 10)
+        
+        # Subscriber to /info for safety
+        self.subscription_ = self.create_subscription(
+            Info,
+            '/info',
+            self.info_callback,
+            10)
+            
+        # Subscriber to /odom for position
+        self.odom_sub_ = self.create_subscription(
+            Odometry,
+            '/odom',
+            self.odom_callback,
+            10)
+            
+        self.running = True
+        self.min_dist = 100.0
+        self.threshold = 0.5 # Default, will be updated from info msg
+        self.current_pose = None
+        
+        # Start input thread so we don't block ROS spin
+        self.input_thread = threading.Thread(target=self.input_loop)
+        self.input_thread.start()
+
+    def info_callback(self, msg):
+        self.min_dist = msg.distance
+        self.threshold = msg.threshold
+
+    def odom_callback(self, msg):
+        self.current_pose = msg.pose.pose
+
+    def get_distance(self, pose1, pose2):
+        dx = pose1.position.x - pose2.position.x
+        dy = pose1.position.y - pose2.position.y
+        return math.sqrt(dx*dx + dy*dy)
+
+    def input_loop(self):
+        time.sleep(1.0) # Wait for node to fully start
+        print("Input Controller Ready. Monitoring /info for safety.")
+        while self.running and rclpy.ok():
+            try:
+                print("\n--- Enter Velocities ---")
+                lin_str = input("Linear Velocity: ")
+                ang_str = input("Angular Velocity: ")
+                
+                try:
+                    linear = float(lin_str)
+                    angular = float(ang_str)
+                except ValueError:
+                    print("Invalid number format. Please enter numbers.")
+                    continue
+                
+                # Check if there is odom data
+                if self.current_pose is None:
+                    print("Waiting for Odometry data...")
+                    while self.current_pose is None and self.running:
+                        time.sleep(0.1)
+                
+                start_pose = self.current_pose
+
+                # Check safety before starting
+                if self.min_dist < self.threshold:
+                    print(f"Cannot move! Too close to obstacle ({self.min_dist:.2f} < {self.threshold:.2f})")
+                    continue
+
+                # Publish logic
+                msg = Twist()
+                msg.linear.x = linear
+                msg.angular.z = angular
+                
+                self.get_logger().info(f"Publishing Lin: {linear}, Ang: {angular} for 1s")
+                
+                # Publish for 1 second, checking safety
+                end_time = time.time() + 1.0
+                step_safe = True
+                
+                while time.time() < end_time and self.running:
+                    if self.min_dist < self.threshold:
+                        self.get_logger().warn("Safety Threshold Breached! Stopping and Backtracking...")
+                        step_safe = False
+                        break
+                        
+                    self.publisher_.publish(msg)
+                    time.sleep(0.1) # 10Hz
+                    
+                # Stop
+                stop_msg = Twist()
+                self.publisher_.publish(stop_msg)
+                
+                if not step_safe:
+                    # Backtracking
+                    self.get_logger().info("Backtracking to safe position...")
+                    
+                    # Inverse velocity
+                    back_msg = Twist()
+                    back_msg.linear.x = -linear
+                    back_msg.angular.z = -angular
+                    
+                    # Move until close to start_pose
+                    while self.running and self.get_distance(self.current_pose, start_pose) > 0.05:
+                        self.publisher_.publish(back_msg)
+                        time.sleep(0.1)
+                    
+                    # Stop again
+                    self.publisher_.publish(stop_msg)
+                    self.get_logger().info("Backtracking complete.")
+
+                else:
+                    self.get_logger().info("Finished step.")
+                
+            except (EOFError, KeyboardInterrupt):
+                self.running = False
+                break
+            except Exception as e:
+                self.get_logger().error(f"Error in input loop: {e}")
+                
+    def stop(self):
+        self.running = False
+
+def main(args=None):
+    rclpy.init(args=args)
+    node = InputController()
+    
+    try:
+        rclpy.spin(node)
+    except (KeyboardInterrupt, rclpy.executors.ExternalShutdownException):
+        pass
+    finally:
+        node.stop()
+        node.destroy_node()
+        rclpy.shutdown()
+
+if __name__ == '__main__':
+    main()

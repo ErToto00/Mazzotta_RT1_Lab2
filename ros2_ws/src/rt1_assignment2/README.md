@@ -44,8 +44,10 @@ ros2 launch rt1_assignment2 launcher.py
 This will open:
 *   **Gazebo**: The 3D simulation environment.
 *   **Main Terminal**: Displays logs from the `safety_controller` and simulation.
-*   **Teleop Terminal**: Allows you to control the robot using the keyboard (i, j, k, l, etc.).
+*   **Teleop Terminal**: Allows you to control the robot using the keyboard (i, j, k, l, etc.). For the scope of this project, ignore the "Holonomic movement" section.
 *   **User Interface Terminal**: Provides a menu to interact with the services.
+
+Alternatively, you can run the the **launch_project.sh** file in the root directory of the project.
 
 ### User Interface
 
@@ -59,9 +61,17 @@ The User Interface node runs in a separate terminal and offers the following com
 ### `safety_controller` (C++)
 A node that acts as a middleware between the teleop command and the robot.
 
+1.  **Safety Logic**: 
+    If the robot approaches an obstacle closer than the set threshold (default 0.5m), the controller intervenes. Instead of just stopping, the robot will reverse to its last known safe position. Input from the user is ignored during this maneuver.
+    
+2.  **Logging**:
+    The robot's position is logged to a file named `robot_pos_log.txt` located in the home directory.
+
 *   **Subscribers**:
     *   `/scan` (`sensor_msgs/msg/LaserScan`): Reads laser data to detect obstacles.
-    *   `/cmd_vel_in` (`geometry_msgs/msg/Twist`): Receives commands from `teleop_twist_keyboard`.
+    *   `/cmd_vel_in` (`geometry_msgs/msg/Twist`): Receives commands from the `teleop_twist_keyboard` node. This node is launched as part of the system and acts as the "imported file" providing standard teleoperation capabilities without custom scripts.
+    *   `/odom` (`nav_msgs/msg/Odometry`): Monitoring robot position for logging and safety retraction.
+
 *   **Publishers**:
     *   `/cmd_vel` (`geometry_msgs/msg/Twist`): Sends the final safe command to the robot.
     *   `/info` (`rt1_assignment2/msg/Info`): Publishes status information (distance to closest obstacle, direction, current threshold).

@@ -618,7 +618,6 @@ CMakeFiles/rt1_assignment2_s__rosidl_typesupport_c.dir/clean:
 # Target rules for target CMakeFiles/safety_controller.dir
 
 # All Build rule for target.
-CMakeFiles/safety_controller.dir/all: CMakeFiles/rt1_assignment2.dir/all
 CMakeFiles/safety_controller.dir/all: CMakeFiles/rt1_assignment2__rosidl_generator_c.dir/all
 CMakeFiles/safety_controller.dir/all: CMakeFiles/rt1_assignment2__cpp.dir/all
 CMakeFiles/safety_controller.dir/all: CMakeFiles/rt1_assignment2__rosidl_typesupport_cpp.dir/all
@@ -629,7 +628,7 @@ CMakeFiles/safety_controller.dir/all: CMakeFiles/rt1_assignment2__rosidl_typesup
 
 # Build rule for subdir invocation for target.
 CMakeFiles/safety_controller.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/build/rt1_assignment2/CMakeFiles 45
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/build/rt1_assignment2/CMakeFiles 20
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/safety_controller.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ertoto/Documenti/GitHub/Mazzotta_RT1_Lab2/build/rt1_assignment2/CMakeFiles 0
 .PHONY : CMakeFiles/safety_controller.dir/rule

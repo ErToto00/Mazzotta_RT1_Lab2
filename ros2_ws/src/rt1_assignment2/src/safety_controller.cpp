@@ -71,41 +71,48 @@ private:
   void scan_callback(const sensor_msgs::msg::LaserScan::SharedPtr msg)
   {
     
-    int n_ranges = msg->ranges.size();
+    static bool logged_scan_info = false;
+    if (!logged_scan_info) {
+        RCLCPP_INFO(this->get_logger(), "Scan Info: Angle Min: %.2f, Max: %.2f, Inc: %.2f, Size: %zu", 
+            msg->angle_min, msg->angle_max, msg->angle_increment, msg->ranges.size());
+        logged_scan_info = true;
+    }
+
+    size_t n_ranges = msg->ranges.size();
     int one_third = n_ranges / 3;
         
+    // Find global minimum and its index
     float min_dist = 100.0;
+    int min_index = -1;
     std::string direction = "none";
-    
-    // Check Right (start of array)
-    float min_r = 100.0;
-    for(int i=0; i < one_third; i++) {
-        if(msg->ranges[i] < min_r) min_r = msg->ranges[i];
+
+    for (size_t i = 0; i < n_ranges; ++i) {
+        if (msg->ranges[i] < min_dist) {
+            min_dist = msg->ranges[i];
+            min_index = i;
+        }
     }
+
+    // Calculate Angle of the closest obstacle
+    // Assumes standard ROS REP 103: x forward, y left, z up. Angle 0 is forward.
+    float obs_angle = msg->angle_min + min_index * msg->angle_increment;
+
+    // Determine direction string for info (Approximate sectors for display)
+    // Normalizing angle to be safe (though usually within -PI to PI)
+    // Front: -PI/4 to +PI/4 (approx)? Or stick to previous 1/3 logic mapping?
+    // Let's stick to the previous Sector logic only for the "direction" string 
+    // to maintain consistency with what the user might expect in the Info message,
+    // OR update it to be more accurate based on angle. 
+    // Previous logic: Right (start), Front (mid), Left (end).
+    // If we assume a 180-270 deg scanner centered on front:
+    // Index 0 -> Right, Mid -> Front, End -> Left.
+    // The previous implementation mapped specific indices to min_r, min_f, min_l.
+    // I will preserve the "info" logic loosely by checking sector indices again OR
+    // just use the angle to set the string.
     
-    // Check Front (middle)
-    float min_f = 100.0;
-    for(int i=one_third; i < 2*one_third; i++) {
-        if(msg->ranges[i] < min_f) min_f = msg->ranges[i];
-    }
-    
-    // Check Left (end)
-    float min_l = 100.0;
-    for(int i=2*one_third; i < n_ranges; i++) {
-        if(msg->ranges[i] < min_l) min_l = msg->ranges[i];
-    }
-    
-    // Determine closest
-    if (min_r < min_f && min_r < min_l) {
-        min_dist = min_r;
-        direction = "right";
-    } else if (min_f < min_r && min_f < min_l) {
-        min_dist = min_f;
-        direction = "front";
-    } else {
-        min_dist = min_l;
-        direction = "left";
-    }
+    if (min_index < one_third) direction = "right";
+    else if (min_index < 2*one_third) direction = "front";
+    else direction = "left";
     
     min_dist_ = min_dist;
 
@@ -125,7 +132,7 @@ private:
     if (min_dist < threshold_ && !reversing_) {
         // Trigger Safety Mode
         reversing_ = true;
-        RCLCPP_WARN(this->get_logger(), "Threshold breached! reversing...");
+        RCLCPP_WARN(this->get_logger(), "Threshold breached! Closest Obs Angle: %.2f. Reversing...", obs_angle);
     }
 
     if (reversing_) {
@@ -141,10 +148,21 @@ private:
             cmd_pub_->publish(stop_cmd);
             RCLCPP_INFO(this->get_logger(), "Safety maneuver complete. Resuming normal operation.");
         } else {
-             // Execute maneuver: opposite linear, same angular
+             // Execute maneuver:
+             // Move AWAY from obstacle.
+             // Front arc (-PI/2 to PI/2): Move Backward (negative linear.x)
+             // Back arc: Move Forward (positive linear.x)
+             
             geometry_msgs::msg::Twist safety_cmd;
-            safety_cmd.linear.x = -1.0 * std::abs(last_input_vel_.linear.x); // Ensure it's negative (backward) relative to forward motion
-            if (safety_cmd.linear.x == 0.0) safety_cmd.linear.x = -0.5; // Fallback if last input was 0
+            double speed_mag = std::abs(last_input_vel_.linear.x);
+             if (speed_mag == 0.0) speed_mag = 0.5; // Fallback
+
+            // Check if obstacle is in front (abs(angle) < 90 deg)
+            if (std::abs(obs_angle) < 1.5708) {
+                safety_cmd.linear.x = -speed_mag; // Go Back
+            } else {
+                safety_cmd.linear.x = speed_mag;  // Go Forward
+            }
             
             safety_cmd.angular.z = last_input_vel_.angular.z;
             cmd_pub_->publish(safety_cmd);

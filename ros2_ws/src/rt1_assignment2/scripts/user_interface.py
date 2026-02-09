@@ -75,7 +75,11 @@ class UserInterface(Node):
             elif cmd == 'q':
                 self.running = False
                 print("Quitting...")
-                rclpy.shutdown()
+                # Signal shutdown to the executor
+                try:
+                    rclpy.shutdown()
+                except Exception:
+                    pass
                 break
 
 from rclpy.executors import MultiThreadedExecutor
@@ -95,7 +99,10 @@ def main(args=None):
         node.running = False
         # node.menu_thread.join()
         node.destroy_node()
-        rclpy.shutdown()
+        if rclpy.ok():
+            rclpy.shutdown()
+        # Explicitly exit with 0 to satisfy gnome-terminal --wait
+        sys.exit(0)
 
 if __name__ == '__main__':
     main()

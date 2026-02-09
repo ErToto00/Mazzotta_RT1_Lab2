@@ -32,8 +32,8 @@ ament_package()
 
 add_executable(safety_controller src/safety_controller.cpp)
 ament_target_dependencies(safety_controller rclcpp std_msgs geometry_msgs sensor_msgs nav_msgs)
-rosidl_target_interfaces(safety_controller
-  ${PROJECT_NAME} "rosidl_typesupport_cpp")
+rosidl_get_typesupport_target(cpp_typesupport_target "${PROJECT_NAME}" "rosidl_typesupport_cpp")
+target_link_libraries(safety_controller "${cpp_typesupport_target}")
 
 install(TARGETS
   safety_controller
@@ -44,6 +44,12 @@ install(PROGRAMS
   scripts/user_interface.py
   DESTINATION lib/${PROJECT_NAME}
   RENAME user_interface
+)
+
+install(PROGRAMS
+  scripts/input_controller.py
+  DESTINATION lib/${PROJECT_NAME}
+  RENAME input_controller
 )
 
 install(DIRECTORY

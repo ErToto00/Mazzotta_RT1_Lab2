@@ -24,12 +24,12 @@ def generate_launch_description():
             output='screen'
         ),
         
-        # Teleop Twist Keyboard - Needs a new terminal for input
+        # Input Controller - Needs a new terminal for input
         Node(
-            package='teleop_twist_keyboard',
-            executable='teleop_twist_keyboard',
-            name='teleop',
-            prefix='gnome-terminal --wait --', # Using gnome-terminal based on system check
+            package='rt1_assignment2',
+            executable='input_controller',
+            name='input_controller',
+            prefix='gnome-terminal --wait --', 
             remappings=[('/cmd_vel', '/cmd_vel_in')],
             output='screen'
         ),

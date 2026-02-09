@@ -1,5 +1,6 @@
 from launch import LaunchDescription
-from launch.actions import IncludeLaunchDescription, Shutdown
+from launch.actions import IncludeLaunchDescription, Shutdown, RegisterEventHandler, LogInfo
+from launch.event_handlers import OnProcessExit
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 from launch_ros.actions import Node
 from ament_index_python.packages import get_package_share_directory
@@ -15,21 +16,25 @@ def generate_launch_description():
             output='screen'
         ),
         
-        # User Interface (Python) - Needs a new terminal for input
+        # User Interface (Python)
         Node(
             package='rt1_assignment2',
             executable='user_interface',
             name='user_interface',
-            prefix='gnome-terminal --wait --', # Using gnome-terminal based on system check
-            output='screen'
+            prefix='gnome-terminal --wait --',
+            output='screen',
+            on_exit=[
+                LogInfo(msg='User Interface exited. Initiating system shutdown...'),
+                Shutdown()
+            ]
         ),
         
-        # Teleop Twist Keyboard - Needs a new terminal for input
+        # Input Controller
         Node(
-            package='teleop_twist_keyboard',
-            executable='teleop_twist_keyboard',
-            name='teleop',
-            prefix='gnome-terminal --wait --', # Using gnome-terminal based on system check
+            package='rt1_assignment2',
+            executable='input_controller',
+            name='input_controller',
+            prefix='gnome-terminal --wait --', 
             remappings=[('/cmd_vel', '/cmd_vel_in')],
             output='screen'
         ),
