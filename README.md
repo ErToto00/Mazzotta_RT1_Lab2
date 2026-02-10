@@ -46,7 +46,12 @@ This will open:
 *   **Input Controller Terminal**: Allows you to control the robot by entering linear and angular velocities. Positive linear velocity corresponds to a forward movement, while positive angular velocity corresponds to a clockwise rotation. The robot will move for 1 second based on these inputs.
 *   **User Interface Terminal**: Provides a menu to interact with the services.
 
-Alternatively, you can run the the **launch_project.sh** file in the root directory of the project.
+Alternatively, run:
+
+```bash
+./launch_project.sh
+```
+in the root directory of the project.
 
 ### User Interface
 
