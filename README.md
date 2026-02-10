@@ -43,7 +43,7 @@ ros2 launch rt1_assignment2 launcher.py
 This will open:
 *   **Gazebo**: The 3D simulation environment.
 *   **Main Terminal**: Displays logs from the `safety_controller` and simulation.
-*   **Input Controller Terminal**: Allows you to control the robot by entering linear and angular velocities. Positive linear velocity corresponds to a forward movement, while positive angular velocity corresponds to a clockwise rotation. The robot will move for 1 second based on these inputs.
+*   **Input Controller Terminal**: Allows you to control the robot by entering linear and angular velocities. Positive linear velocity corresponds to a forward movement, while positive angular velocity corresponds to a clockwise rotation. The robot will move for 1 s based on these inputs.
 *   **User Interface Terminal**: Provides a menu to interact with the services.
 
 Alternatively, run:
@@ -65,7 +65,7 @@ The User Interface node runs in a separate terminal and offers the following com
 ### `input_controller` (Python)
 A node that handles user input for controlling the robot.
 1.  **Input Logic**:
-    Asking the user for a linear and angular velocity. The robot will move for 1 second.
+    Asking the user for a linear and angular velocity. The robot will move for 1 s.
 2.  **Safety Monitoring**:
     It subscribes to the `/info` topic. If the distance to an obstacle is less than the threshold, it prevents the robot from moving or stops it immediately. If a step is interrupted by an obstacle, the robot backtracks to its starting position.
 
@@ -79,16 +79,16 @@ A node that acts as a middleware between the input controller and the robot.
     The robot's position is logged to a file named `robot_pos_log.txt` located in the home directory.
 
 *   **Subscribers**:
-    *   `/scan` (`sensor_msgs/msg/LaserScan`): Reads laser data to detect obstacles.
-    *   `/cmd_vel_in` (`geometry_msgs/msg/Twist`): Receives commands from the `input_controller` node.
-    *   `/odom` (`nav_msgs/msg/Odometry`): Monitoring robot position for logging and safety retraction.
+    *   `/scan`: Reads laser data to detect obstacles.
+    *   `/cmd_vel_in`: Receives commands from the `input_controller` node.
+    *   `/odom`: Monitoring robot position for logging and safety retraction.
 
 *   **Publishers**:
-    *   `/cmd_vel` (`geometry_msgs/msg/Twist`): Sends the final safe command to the robot.
-    *   `/info` (`rt1_assignment2/msg/Info`): Publishes status information (distance to closest obstacle, direction, current threshold).
+    *   `/cmd_vel`: Sends the final safe command to the robot.
+    *   `/info`: Publishes status information (distance to closest obstacle, direction, current threshold).
 *   **Services**:
-    *   `set_threshold` (`rt1_assignment2/srv/SetThreshold`): Sets the safety distance threshold.
-    *   `get_avg_vel` (`rt1_assignment2/srv/GetAvgVel`): Returns the average velocity of the last few commands.
+    *   `set_threshold`: Sets the safety distance threshold.
+    *   `get_avg_vel`: Returns the average velocity of the last few commands.
 
 ### `user_interface` (Python)
 A client node for interacting with the safety controller.
