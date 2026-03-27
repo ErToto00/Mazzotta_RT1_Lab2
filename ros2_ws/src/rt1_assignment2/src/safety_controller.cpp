@@ -10,8 +10,8 @@
 #include "geometry_msgs/msg/twist.hpp"
 #include "sensor_msgs/msg/laser_scan.hpp"
 #include "nav_msgs/msg/odometry.hpp"
+#include "std_msgs/msg/float32.hpp"
 #include "rt1_assignment2/msg/info.hpp"
-#include "rt1_assignment2/srv/set_threshold.hpp"
 #include "rt1_assignment2/srv/get_avg_vel.hpp"
 
 using std::placeholders::_1;
@@ -35,9 +35,9 @@ public:
     odom_sub_ = this->create_subscription<nav_msgs::msg::Odometry>(
       "/odom", 10, std::bind(&SafetyController::odom_callback, this, _1));
 
-    // Services
-    set_thresh_srv_ = this->create_service<rt1_assignment2::srv::SetThreshold>(
-      "set_threshold", std::bind(&SafetyController::set_thresh_callback, this, _1, _2));
+    // Services & Topics
+    thresh_sub_ = this->create_subscription<std_msgs::msg::Float32>(
+      "/threshold", 10, std::bind(&SafetyController::thresh_callback, this, _1));
     get_avg_srv_ = this->create_service<rt1_assignment2::srv::GetAvgVel>(
       "get_avg_vel", std::bind(&SafetyController::get_avg_callback, this, _1, _2));
 
@@ -96,19 +96,6 @@ private:
     // Calculate Angle of the closest obstacle
     // Assumes standard ROS REP 103: x forward, y left, z up. Angle 0 is forward.
     float obs_angle = msg->angle_min + min_index * msg->angle_increment;
-
-    // Determine direction string for info (Approximate sectors for display)
-    // Normalizing angle to be safe (though usually within -PI to PI)
-    // Front: -PI/4 to +PI/4 (approx)? Or stick to previous 1/3 logic mapping?
-    // Let's stick to the previous Sector logic only for the "direction" string 
-    // to maintain consistency with what the user might expect in the Info message,
-    // OR update it to be more accurate based on angle. 
-    // Previous logic: Right (start), Front (mid), Left (end).
-    // If we assume a 180-270 deg scanner centered on front:
-    // Index 0 -> Right, Mid -> Front, End -> Left.
-    // The previous implementation mapped specific indices to min_r, min_f, min_l.
-    // I will preserve the "info" logic loosely by checking sector indices again OR
-    // just use the angle to set the string.
     
     if (min_index < one_third) direction = "right";
     else if (min_index < 2*one_third) direction = "front";
@@ -200,12 +187,10 @@ private:
     cmd_pub_->publish(clean_msg);
   }
 
-  void set_thresh_callback(const std::shared_ptr<rt1_assignment2::srv::SetThreshold::Request> request,
-                           std::shared_ptr<rt1_assignment2::srv::SetThreshold::Response> response)
+  void thresh_callback(const std_msgs::msg::Float32::SharedPtr msg)
   {
-    threshold_ = request->input;
-    response->success = true;
-    RCLCPP_INFO(this->get_logger(), "Threshold updated to: %.2f", threshold_);
+    threshold_ = msg->data;
+    RCLCPP_INFO(this->get_logger(), "Threshold asynchronously updated to: %.2f", threshold_);
   }
 
   void get_avg_callback(const std::shared_ptr<rt1_assignment2::srv::GetAvgVel::Request> /*request*/,
@@ -235,8 +220,8 @@ private:
   rclcpp::Subscription<sensor_msgs::msg::LaserScan>::SharedPtr scan_sub_;
   rclcpp::Subscription<geometry_msgs::msg::Twist>::SharedPtr input_sub_;
   rclcpp::Subscription<nav_msgs::msg::Odometry>::SharedPtr odom_sub_;
+  rclcpp::Subscription<std_msgs::msg::Float32>::SharedPtr thresh_sub_;
   
-  rclcpp::Service<rt1_assignment2::srv::SetThreshold>::SharedPtr set_thresh_srv_;
   rclcpp::Service<rt1_assignment2::srv::GetAvgVel>::SharedPtr get_avg_srv_;
   
   float threshold_;

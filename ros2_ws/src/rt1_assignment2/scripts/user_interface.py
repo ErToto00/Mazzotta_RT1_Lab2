@@ -4,12 +4,13 @@ import sys
 import threading
 import rclpy
 from rclpy.node import Node
-from rt1_assignment2.srv import SetThreshold, GetAvgVel
+from rt1_assignment2.srv import GetAvgVel
+from std_msgs.msg import Float32
 
 class UserInterface(Node):
     def __init__(self):
         super().__init__('user_interface')
-        self.set_thresh_client = self.create_client(SetThreshold, '/set_threshold')
+        self.thresh_pub = self.create_publisher(Float32, '/threshold', 10)
         self.get_avg_client = self.create_client(GetAvgVel, '/get_avg_vel')
         
         self.running = True
@@ -34,24 +35,11 @@ class UserInterface(Node):
                     val_str = input("Enter new threshold: ")
                     val = float(val_str)
                     
-                    req = SetThreshold.Request()
-                    req.input = val
+                    msg = Float32()
+                    msg.data = val
                     
-                    if not self.set_thresh_client.wait_for_service(timeout_sec=5.0):
-                        self.get_logger().warn('Service set_threshold not available')
-                        self.get_logger().info(f'Available services: {self.get_service_names_and_types()}')
-                        continue
-                        
-                    future = self.set_thresh_client.call_async(req)
-                    
-                    # Simple wait loop
-                    while not future.done():
-                        import time
-                        time.sleep(0.1)
-                        
-                    result = future.result()
-                    if result.success:
-                        print("Threshold updated!")
+                    self.thresh_pub.publish(msg)
+                    print("Threshold instantaneously published asynchronously!")
                         
                 except ValueError:
                     print("Invalid number format")
