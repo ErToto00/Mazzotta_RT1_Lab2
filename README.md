@@ -112,3 +112,10 @@ A client node for interacting with the safety controller.
 *   **`GetAvgVel.srv`**
     *   Request: Empty.
     *   Response: `float32 avg_linear`, `float32 avg_angular`.
+
+## Exam changes
+
+*   **Asynchronous Threshold Updates**: The mechanism to set the obstacle distance threshold has been refactored to be fully asynchronous.
+    *   Previously, the `user_interface` used a synchronous ROS 2 Service (`SetThreshold`) to update the threshold, which required a request-response cycle and blocking waits.
+    *   This has been replaced with an asynchronous ROS 2 Topic (`/threshold`). The `user_interface` now utilizes a Publisher to broadcast `std_msgs/Float32` messages in a "fire-and-forget" manner.
+    *   The `safety_controller` node has been correspondingly updated to use a Subscriber (`thresh_sub_`) that listens to the `/threshold` topic and updates the internal `threshold_` variable dynamically, completely decoupled from any other blocking interactions or velocity commands given to the robot.

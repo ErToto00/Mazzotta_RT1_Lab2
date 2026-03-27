@@ -6,6 +6,7 @@ import rclpy
 from rclpy.node import Node
 from rt1_assignment2.srv import GetAvgVel
 from std_msgs.msg import Float32
+from rclpy.executors import MultiThreadedExecutor
 
 class UserInterface(Node):
     def __init__(self):
@@ -70,7 +71,6 @@ class UserInterface(Node):
                     pass
                 break
 
-from rclpy.executors import MultiThreadedExecutor
 
 def main(args=None):
     rclpy.init(args=args)
